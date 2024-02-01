@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>core</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/2d0f2967f9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="top-core">
+      <div class="navigation width-core">
+        <div class="core-nav">
+          <div class="img-logo">
+            <img src="images/core - Copy.png" alt="core" />
+          </div>
+          <h2>core security</h2>
+          <div class="server-click" onclick="openPopup()">
+            <i class="fa-solid fa-server"></i>
+            <p>S8 Server | s8server</p>
+          </div>
+        </div>
+        <div class="icon-nav">
+          <p>Rathtina Orn</p>
+          <span>
+            <i class="fa-solid fa-user" onclick="openUser()"></i>
+            <i
+              class="fa-solid fa-arrows-to-circle"
+              class="zoom-none"
+              onclick="toggle_full_screen()"
+            ></i>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <div class="preview" id="preview">
+      <div class="cart-p-i">
+        <p>Tenant</p>
+        <i class="fa-solid fa-xmark" onclick="closePopup()"></i>
+      </div>
+      <button class="btn-pre">
+        <img src="images/localhost.png" alt="localhost" />
+        <p>(localhost)</p>
+      </button>
+      <div class="icon-server">
+        <i class="fa-solid fa-server"></i>
+        <select name="Server" size="1" id="server">
+          <option value="server" disabled>Server</option>
+          <option value="sntica">Antica</option>
+          <option value="assombra">Assombra</option>
+          <option value="astera">Astera</option>
+          <option value="belluma">Belluma</option>
+        </select>
+      </div>
+      <div class="line-core"></div>
+      <button class="btn-last-pre" onclick="clearField()">Cencel</button>
+    </div>
+    <!-- Preview server -->
+
+    <div class="userCart" id="userCart">
+      <div class="user-title">
+        <i class="fa-solid fa-user"></i>
+        <p>Rathtina Orn</p>
+      </div>
+      <span class="icon-lang">
+        <p><i class="fa-solid fa-earth-asia"></i> Languages</p>
+        <span class="img-lang">
+          <img
+            src="images/circle-flag-of-cambodia-free-png.webp"
+            alt="cambodia"
+          />
+          <img src="images/english-icon-png-21.jpg" alt="english" />
+        </span>
+      </span>
+      <div class="edit">
+        <a href="edit.html"
+          ><i class="fa-solid fa-pen-to-square"></i> Edit Profile</a
+        >
+      </div>
+      <div class="change">
+        <a href="changecore.html"
+          ><i class="fa-solid fa-lock"></i> change Password</a
+        >
+      </div>
+      <div class="logout">
+        <a href="index.html"
+          ><i class="fa-solid fa-right-to-bracket"></i> Logout</a
+        >
+      </div>
+      <button onclick="closeUser()">close</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1149,7 +1149,7 @@ nav #icon {
 }
 .open-cart {
   visibility: visible;
-  top: 50%;
+  top: 28%;
   transform: translate(-50%, -50%) scale(1);
 }
 .cart-p-i {
@@ -1219,7 +1219,7 @@ nav #icon {
 }
 .show-User {
   visibility: visible;
-  top: 50%;
+  top: 30%;
   transform: translate(-50%, -50%) scale(1);
 }
 
@@ -1762,10 +1762,10 @@ nav #icon {
     width: 18rem;
   }
   .open-cart {
-    top: 25%;
+    top: 23%;
   }
   .show-User {
-    top: 25%;
+    top: 24%;
   }
   .icon-lang > p {
     position: relative;
@@ -1787,6 +1787,10 @@ nav #icon {
     left: 0;
   }
   .btn-pre > p {
+    position: absolute;
+    left: 1.5rem;
+  }
+  .icon-server select option {
     position: absolute;
     left: 1.5rem;
   }

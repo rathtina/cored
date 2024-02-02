@@ -1175,6 +1175,7 @@ nav #icon {
   outline: 0;
   padding: 0.8rem 2rem;
   width: 100%;
+  height: 2.9rem;
   border-radius: 0.5rem;
   border: 1px solid #cacaca;
 }
@@ -1775,8 +1776,5 @@ nav #icon {
   .btn-pre > p {
     position: absolute;
     left: 1.5rem;
-  }
-  .icon-server select {
-    padding: 2rem;
   }
 }

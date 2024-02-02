@@ -1763,12 +1763,10 @@ nav #icon {
     width: 18rem;
   }
   .open-cart {
-    top: 20%;
-    transform: translate(-50%, -50%) scale(1);
+    top: 10%;
   }
   .show-User {
-    top: 20%;
-    transform: translate(-50%, -50%) scale(1);
+    top: 10%;
   }
   .icon-lang > p {
     position: relative;

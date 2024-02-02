@@ -634,19 +634,20 @@ nav #icon {
   margin-bottom: 1rem;
 }
 .box-case > button {
-  padding: 1rem 2rem;
+  padding: 0.8rem 1rem;
   border: 0;
+  border-radius: 0.3rem;
   outline: 0;
   font-weight: 900;
   color: white;
-  font-size: 1rem;
-  background-color: blue;
+  font-size: 0.8rem;
+  background-color: green;
 }
 .box-case > img {
   width: 150px;
 }
 .box-case > button:hover {
-  background-color: darkblue;
+  background-color: darkgreen;
 }
 
 /* ---------Get in touch with us-------- */
@@ -1191,6 +1192,7 @@ nav #icon {
   border: 1px solid #cacaca;
   border-radius: 0.5rem;
   outline: 0;
+  margin-top: 1rem;
 }
 .btn-pre:hover,
 .btn-last-pre:hover,
@@ -1389,6 +1391,18 @@ nav #icon {
   position: relative;
   left: 2.5rem;
 }
+
+/* --------Dropdown--------- */
+/* .select-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2.7rem;
+  background-color: #cacaca;
+  padding: 0 20px;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+} */
 
 /* -------Respnsive-------- */
 @media screen and (max-width: 1024px) {

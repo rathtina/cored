@@ -1762,12 +1762,14 @@ nav #icon {
   .preview {
     width: 18rem;
   }
-  /* .open-cart {
-    top: 13%;
+  .open-cart {
+    top: 30%;
+    transform: translate(-30%, -30%) scale(1);
   }
   .show-User {
-    top: 10%;
-  } */
+    top: 30%;
+    transform: translate(-30%, -30%) scale(1);
+  }
   .icon-lang > p {
     position: relative;
     right: 1rem;

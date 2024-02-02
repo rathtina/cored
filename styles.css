@@ -1776,9 +1776,7 @@ nav #icon {
     position: absolute;
     left: 1.5rem;
   }
-  .icon-server select option {
-    position: absolute;
-    left: 1.5rem;
-    padding: 1rem;
+  .icon-server select {
+    padding: 2rem;
   }
 }

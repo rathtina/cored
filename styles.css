@@ -1149,7 +1149,7 @@ nav #icon {
 }
 .open-cart {
   visibility: visible;
-  top: 28%;
+  top: 50%;
   transform: translate(-50%, -50%) scale(1);
 }
 .cart-p-i {
@@ -1219,7 +1219,7 @@ nav #icon {
 }
 .show-User {
   visibility: visible;
-  top: 30%;
+  top: 50%;
   transform: translate(-50%, -50%) scale(1);
 }
 

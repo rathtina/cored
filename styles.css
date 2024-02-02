@@ -1762,10 +1762,10 @@ nav #icon {
     width: 18rem;
   }
   .open-cart {
-    top: 20%;
+    top: 13%;
   }
   .show-User {
-    top: 20%;
+    top: 10%;
   }
   .icon-lang > p {
     position: relative;
@@ -1791,7 +1791,7 @@ nav #icon {
     left: 1.5rem;
   }
   .icon-server select option {
-    position: absolute;
-    left: 1.5rem;
+    position: relative;
+    left: 2rem;
   }
 }

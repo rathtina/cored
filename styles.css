@@ -606,7 +606,8 @@ nav #icon {
 .case > p {
   text-align: center;
   text-transform: uppercase;
-  margin: 0.5rem 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 .container-case {
   display: grid;
@@ -642,7 +643,7 @@ nav #icon {
   background-color: blue;
 }
 .box-case > img {
-  width: 200px;
+  width: 150px;
 }
 .box-case > button:hover {
   background-color: darkblue;
@@ -1165,6 +1166,10 @@ nav #icon {
   width: 100%;
   padding: 0.2rem 0;
   outline: 0;
+  position: relative;
+}
+.icon-server {
+  position: relative;
 }
 .icon-server select {
   outline: 0;
@@ -1766,5 +1771,14 @@ nav #icon {
   }
   .check-box label {
     left: 0;
+  }
+  .btn-pre > p {
+    position: absolute;
+    left: 1.5rem;
+  }
+  .icon-server select option {
+    position: absolute;
+    left: 1.5rem;
+    padding: 1rem;
   }
 }

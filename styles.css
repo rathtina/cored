@@ -1170,11 +1170,6 @@ nav #icon {
   color: black;
   position: relative;
 }
-.icon-server {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 .icon-server select {
   outline: 0;
   padding: 0.8rem 3rem;
@@ -1185,6 +1180,7 @@ nav #icon {
   border-radius: 0.5rem;
   border: 1px solid #cacaca;
 }
+
 .line-core {
   width: 100%;
   height: 0.5px;
@@ -1797,5 +1793,9 @@ nav #icon {
   .btn-pre > p {
     position: absolute;
     left: 1.5rem;
+  }
+  .icon-server select option {
+    position: relative;
+    left: 2rem;
   }
 }

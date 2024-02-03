@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>changePassword</title>
+    <script
+      src="https://kit.fontawesome.com/2d0f2967f9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="center-card">
+      <div class="card">
+        <h3>New Password</h3>
+        <p>Please create a new password that you don't use any other site</p>
+        <div class="btn-box">
+          <div class="eye-in">
+            <input
+              type="password"
+              placeholder="create new password"
+              id="password"
+            />
+            <i class="fa-solid fa-eye-slash" id="hidden"></i>
+          </div>
+        </div>
+        <div class="btn-box">
+          <div class="eye-in">
+            <input
+              type="password"
+              placeholder="Confirm your password"
+              id="password"
+            />
+            <i class="fa-solid fa-eye-slash" id="hidden"></i>
+          </div>
+        </div>
+        <div class="btn-box-1" onclick="window.location.href='/success.html';">
+          <button>change</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

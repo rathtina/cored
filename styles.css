@@ -1765,12 +1765,12 @@ nav #icon {
     width: 18rem;
   }
   .open-cart {
-    top: 25%;
-    transform: translate(-25%, -25%) scale(1);
+    top: 30%;
+    transform: translate(-50%, -50%) scale(1);
   }
   .show-User {
-    top: 25%;
-    transform: translate(-25%, -25%) scale(1);
+    top: 30%;
+    transform: translate(-50%, -50%) scale(1);
   }
   .icon-lang > p {
     position: relative;
@@ -1795,7 +1795,7 @@ nav #icon {
     position: absolute;
     left: 1.5rem;
   }
-  .icon-server select {
-    padding: 0.8rem 4rem;
+  .icon-server select :optional {
+    margin-right: -2rem;
   }
 }

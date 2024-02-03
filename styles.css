@@ -1175,7 +1175,7 @@ nav #icon {
 }
 .icon-server select {
   outline: 0;
-  padding: 0.8rem 2.5rem;
+  padding: 0.8rem 2rem;
   width: 100%;
   color: black;
   font-size: 0.9rem;
@@ -1794,8 +1794,5 @@ nav #icon {
   .btn-pre > p {
     position: absolute;
     left: 1.5rem;
-  }
-  .icon-server select {
-    padding-left: 3rem;
   }
 }

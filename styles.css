@@ -1170,7 +1170,11 @@ nav #icon {
   color: black;
   position: relative;
 }
+.icon-server {
+  position: relative;
+}
 .icon-server select {
+  margin-top: 1rem;
   outline: 0;
   padding: 0.8rem 3rem;
   width: 100%;
@@ -1201,9 +1205,9 @@ nav #icon {
   border-color: green;
 }
 .icon-server > i {
-  position: relative;
+  position: absolute;
   top: 2rem;
-  left: 1rem;
+  right: 90%;
 }
 
 /* -------User-------- */
@@ -1793,9 +1797,5 @@ nav #icon {
   .btn-pre > p {
     position: absolute;
     left: 1.5rem;
-  }
-  .icon-server select option {
-    position: relative;
-    left: 2rem;
   }
 }

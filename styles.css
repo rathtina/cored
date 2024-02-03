@@ -1171,11 +1171,13 @@ nav #icon {
   position: relative;
 }
 .icon-server {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .icon-server select {
   outline: 0;
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 3rem;
   width: 100%;
   color: black;
   font-size: 0.9rem;
@@ -1195,6 +1197,7 @@ nav #icon {
   border: 1px solid #cacaca;
   border-radius: 0.5rem;
   outline: 0;
+  color: black;
 }
 .btn-pre:hover,
 .btn-last-pre:hover,

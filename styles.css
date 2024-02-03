@@ -1201,9 +1201,10 @@ nav #icon {
   border-color: green;
 }
 .icon-server > i {
-  position: absolute;
+  position: relative;
   top: 2rem;
   left: 1rem;
+  margin-right: 2rem;
 }
 
 /* -------User-------- */

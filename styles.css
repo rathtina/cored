@@ -1167,6 +1167,7 @@ nav #icon {
   width: 100%;
   padding: 0.2rem 0;
   outline: 0;
+  color: black;
   position: relative;
 }
 .icon-server {
@@ -1174,9 +1175,10 @@ nav #icon {
 }
 .icon-server select {
   outline: 0;
-  padding-top: 0.8rem;
-  padding-left: 3rem;
+  padding: 0.8rem 2.5rem;
   width: 100%;
+  color: black;
+  font-size: 0.9rem;
   height: 2.9rem;
   border-radius: 0.5rem;
   border: 1px solid #cacaca;
@@ -1763,10 +1765,12 @@ nav #icon {
     width: 18rem;
   }
   .open-cart {
-    top: 10%;
+    top: 25%;
+    transform: translate(-25%, -25%) scale(1);
   }
   .show-User {
-    top: 10%;
+    top: 25%;
+    transform: translate(-25%, -25%) scale(1);
   }
   .icon-lang > p {
     position: relative;
@@ -1790,5 +1794,8 @@ nav #icon {
   .btn-pre > p {
     position: absolute;
     left: 1.5rem;
+  }
+  .icon-server select {
+    padding: 0.8rem 4rem;
   }
 }

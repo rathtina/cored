@@ -1170,13 +1170,9 @@ nav #icon {
   color: black;
   position: relative;
 }
-.icon-server {
-  position: relative;
-}
 .icon-server select {
-  margin-top: 1rem;
   outline: 0;
-  padding: 0.8rem 7rem;
+  padding: 0.8rem 2.5rem;
   width: 100%;
   color: black;
   font-size: 0.9rem;
@@ -1207,7 +1203,7 @@ nav #icon {
 .icon-server > i {
   position: absolute;
   top: 2rem;
-  right: 90%;
+  left: 1rem;
 }
 
 /* -------User-------- */

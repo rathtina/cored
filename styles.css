@@ -56,6 +56,13 @@ ul {
   padding: 1.5rem 2rem;
   box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.4);
 }
+.card-for > h3 {
+  text-align: center;
+}
+.card-for .btn-box label {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
 .btn-box button {
   width: 100%;
   height: 100%;
@@ -96,7 +103,7 @@ ul {
 }
 .btn-box i {
   position: absolute;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   top: 40%;
   right: 1rem;
   cursor: pointer;
@@ -1392,7 +1399,7 @@ nav #icon {
 }
 .btn-box > label {
   position: relative;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .btn-box > label > i {
   position: absolute;
@@ -1404,7 +1411,7 @@ nav #icon {
 .btn-box input {
   border-radius: 0.2rem;
   margin: 0.2rem 0;
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding: 0.5rem 1rem;
   width: 100%;
   outline: none;
@@ -1864,10 +1871,10 @@ nav #icon {
   .box-raduis label {
     font-size: 0.6rem;
   }
-  .btn-box input,
+  /* .btn-box input,
   .btn-box > label {
-    font-size: 0.7rem;
-  }
+    font-size: 1rem;
+  } */
   .check-box label {
     left: 0;
   }

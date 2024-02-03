@@ -39,9 +39,9 @@ ul {
   box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.4);
 }
 .card form > h2 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-weight: 600;
 }
 .card > h3 {
@@ -49,13 +49,6 @@ ul {
   text-align: center;
   margin-bottom: 1rem;
 }
-/* .btn-box {
-  position: relative;
-  width: 100%;
-  height: 40px;
-  margin-top: 1rem;
-} */
-.btn-box input,
 .btn-box button {
   width: 100%;
   height: 100%;
@@ -79,11 +72,15 @@ ul {
 .btn-box button:hover {
   background-color: rgb(16, 16, 236);
 }
+.btn-box .eye-in {
+  position: relative;
+}
 .btn-box i {
   position: absolute;
   font-size: 0.6rem;
   top: 40%;
   right: 1rem;
+  cursor: pointer;
 }
 .card form .link-a {
   margin-top: 1rem;
@@ -1296,21 +1293,30 @@ nav #icon {
 
 /* --------Edit Profile-------- */
 .btn-box {
-  position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.3rem;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.5rem 0;
   width: 100%;
-  height: 40px;
-  margin-top: 1rem;
 }
 .btn-box > label {
+  position: relative;
   font-size: 0.9rem;
 }
+.btn-box > label > i {
+  position: absolute;
+  color: red;
+  left: -3%;
+  font-size: 0.4rem;
+  top: -0.1rem;
+}
 .btn-box input {
-  font-size: 0.9rem;
-  width: 56%;
+  border-radius: 0.2rem;
+  margin: 0.2rem 0;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  outline: none;
   border: 1px solid #cacaca;
 }
 .card-edit {
@@ -1350,7 +1356,7 @@ nav #icon {
 .btn-log {
   position: relative;
   left: 35%;
-  margin-top: 2rem;
+  margin-top: 1rem;
   border-radius: 0.5rem;
   display: flex;
   justify-content: center;
@@ -1389,22 +1395,6 @@ nav #icon {
   display: flex;
   gap: 0.3rem;
 }
-.btn-box .position-log {
-  position: relative;
-  left: 2.5rem;
-}
-
-/* --------Dropdown--------- */
-/* .select-btn{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 2.7rem;
-  background-color: #cacaca;
-  padding: 0 20px;
-  border-radius: .5rem;
-  margin-bottom: 1rem;
-} */
 
 /* -------Respnsive-------- */
 @media screen and (max-width: 1024px) {
@@ -1794,5 +1784,8 @@ nav #icon {
   .btn-pre > p {
     position: absolute;
     left: 1.5rem;
+  }
+  .card form > h2 {
+    font-size: 1.4rem;
   }
 }

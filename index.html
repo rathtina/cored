@@ -16,20 +16,26 @@
         <form action="">
           <h2>Login</h2>
           <div class="btn-box">
-            <label class="position-log">Email</label>
+            <label><i class="fa-solid fa-star-of-life"></i>Email</label>
             <input type="email" />
           </div>
           <div class="btn-box">
-            <label class="position-log">Password</label>
-            <input type="password" id="password" />
-            <i class="fa-solid fa-eye-slash" id="hidden"></i>
+            <label><i class="fa-solid fa-star-of-life"></i>Password</label>
+            <div class="eye-in">
+              <input type="password" id="password" />
+              <i class="fa-solid fa-eye-slash" id="hidden"></i>
+            </div>
+          </div>
+          <div class="link-a">
+            <a href="#" onclick="window.location.href='/forgot.html';">Forgot password</a>
           </div>
           <div class="btn-log">
             <a href="core.html">Login</a>
           </div>
-          
+          <div class="p-text">
+            <p>Don't have an account?<a href="#" class="link" onclick="window.location.href='/signup.html';"> Sign up</a></p>
           </div>
-          <!-- <div class="linear-or"></div>
+          <div class="linear-or"></div>
           <div class="fb-color">
             <i class="fa-brands fa-facebook i-fb"></i>
             <button>Login with facebook</button>
@@ -37,7 +43,8 @@
           <div class="google-logo">
             <button>Login with google</button>
             <img src="images/logogoogle.png" alt="google" />
-          </div> -->
+          </div>
+          </div>
         </form>
       </section>
     </div>

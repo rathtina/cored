@@ -12,28 +12,57 @@
   </head>
   <body>
     <div class="center-card">
-      <div class="card">
-        <form action="">
+      <section class="card">
+        <form action="" onclick="checkEmail()">
           <h2>Login</h2>
           <div class="btn-box">
             <label><i class="fa-solid fa-star-of-life"></i>Email</label>
-            <input type="email" placeholder="example@gmail.com"/>
+            <div class="email-field">
+              <input
+                type="email"
+                placeholder="example@gmail.com"
+                class="email"
+              />
+            </div>
+            <span class="error">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p class="error-text">Please Enter a valid email</p>
+            </span>
           </div>
-          <div class="btn-box">
-            <label><i class="fa-solid fa-star-of-life"></i>Create Password</label>
+          <div class="btn-box create-password">
+            <label
+              ><i class="fa-solid fa-star-of-life"></i>Create Password</label
+            >
             <div class="eye-in">
-              <input type="password" id="password" />
+              <input type="password" id="password" class="password" />
               <i class="fa-solid fa-eye-slash" id="hidden"></i>
             </div>
+            <span class="error">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p class="error-text">
+                Please enter at least 8 characters with number, symbol, small
+                and capital letters.
+              </p>
+            </span>
           </div>
           <div class="link-a">
-            <a href="forgot.html" onclick="window.location.href='/forgot.html';">Forgot password</a>
+            <a href="forgot.html" onclick="window.location.href='/forgot.html';"
+              >Forgot password</a
+            >
           </div>
           <div class="btn-log">
             <a href="core.html">Log in</a>
           </div>
           <div class="p-text">
-            <p>Don't have an account?<a href="signup.html" class="link" onclick="window.location.href='/signup.html';"> Sign up</a></p>
+            <p>
+              Don't have an account?<a
+                href="signup.html"
+                class="link"
+                onclick="window.location.href='/signup.html';"
+              >
+                Sign up</a
+              >
+            </p>
           </div>
           <div class="linear-or-1"></div>
           <div class="fb-color-1">
@@ -43,7 +72,6 @@
           <div class="google-logo-1">
             <button>Login with google</button>
             <img src="images/logogoogle.png" alt="google" />
-          </div>
           </div>
         </form>
       </section>

@@ -19,6 +19,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: black;
 }
 .center-card {
   display: flex;
@@ -73,6 +74,7 @@ ul {
   font-size: 0.9rem;
   font-weight: 500;
   border-radius: 0.6rem;
+  position: relative;
 }
 .btn-box-1 button {
   width: 100%;
@@ -120,6 +122,46 @@ ul {
   color: rgb(80, 80, 241);
   font-size: 0.9rem;
 }
+
+/* ---------Error-------- */
+.error {
+  display: flex;
+  align-items: center;
+  color: red;
+  margin-top: 0.1rem;
+  position: relative;
+  margin-bottom: 0.3rem;
+  display: none;
+}
+.error > p.error-text {
+  font-size: 0.8rem;
+  margin-left: 1rem;
+  text-align: start;
+}
+.error > i {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  font-size: 0.7rem;
+}
+
+/* -------Input Sign Up-------- */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button input {
+  background-color: green;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: 1px solid #cacaca;
+  border-radius: 0.2rem;
+}
+
 .card form .link-a > a:hover {
   color: blue;
   text-decoration: underline;
@@ -176,7 +218,7 @@ ul {
 }
 .fb-color .i-fb {
   position: absolute;
-  top: 1rem;
+  top: 0.5rem;
   right: 90%;
   font-size: 1.4rem;
   color: white;
@@ -267,7 +309,7 @@ ul {
 .google-logo img {
   max-width: 1.5rem;
   position: absolute;
-  top: 1rem;
+  top: 0.5rem;
   left: 0.7rem;
 }
 .google-logo-1 img {
@@ -281,7 +323,16 @@ ul {
   background-color: #cacaca;
 }
 
-/* -------Change password-------- */
+/* -----------Container log------- */
+.container-btn-log {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 0.5rem;
+  right: -2rem;
+}
+
+/* -------Changes password-------- */
 .card > p {
   border: 0px solid #eaeaea;
   padding: 0.7rem;
@@ -1357,6 +1408,11 @@ nav #icon {
   color: black;
   border: 0;
 }
+.edit > a:link,
+.change > a:link,
+.logout > a:link {
+  color: black;
+}
 .img-lang {
   display: flex;
   justify-content: center;
@@ -1454,6 +1510,31 @@ nav #icon {
   align-items: center;
   gap: 1rem;
 }
+.btn-gray {
+  position: relative;
+  left: 35%;
+  border-radius: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 2.2rem;
+  border: 1px solid #cacaca;
+  background-color: transparent;
+}
+.btn-gray:hover {
+  background-color: #cacaca;
+}
+.btn-gray > a {
+  color: black;
+  border: 0;
+}
+.btn-gray > a:link {
+  color: black;
+}
+.btn-log a:link {
+  color: white;
+}
 .btn-log {
   position: relative;
   left: 35%;
@@ -1461,8 +1542,8 @@ nav #icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 6rem;
-  height: 2.5rem;
+  width: 5rem;
+  height: 2.2rem;
   border: 1px solid #cacaca;
   background-color: green;
 }
@@ -1684,6 +1765,9 @@ nav #icon {
   .server-click > p {
     display: none;
   }
+  .container-btn-log {
+    right: -0.4rem;
+  }
 }
 @media screen and (max-width: 468px) {
   .top-page .search-box > input {
@@ -1887,5 +1971,8 @@ nav #icon {
   }
   .card form > h2 {
     font-size: 1.4rem;
+  }
+  .container-btn-log {
+    right: 1.5rem;
   }
 }

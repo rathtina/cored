@@ -12,41 +12,78 @@
   </head>
   <body>
     <div class="center-card">
-      <div class="card">
-        <form action="">
+      <section class="card">
+        <form>
           <h2>Sign Up</h2>
           <div class="btn-box">
             <label><i class="fa-solid fa-star-of-life"></i>Email</label>
-            <input type="email" placeholder="example@gmail.com"/>
+            <div class="email-field">
+              <input
+                type="email"
+                placeholder="example@gmail.com"
+                class="email"
+              />
+            </div>
+            <span class="error">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p class="error-text">Please Enter a valid email</p>
+            </span>
           </div>
-          <div class="btn-box">
-            <label><i class="fa-solid fa-star-of-life"></i>Create Password</label>
+          <div class="btn-box create-password">
+            <label
+              ><i class="fa-solid fa-star-of-life"></i>Create Password</label
+            >
             <div class="eye-in">
-              <input type="password" id="password" />
+              <input type="password" id="password" class="password" />
               <i class="fa-solid fa-eye-slash" id="hidden"></i>
             </div>
-            <div class="btn-box">
-              <label><i class="fa-solid fa-star-of-life"></i>Comfirm Password</label>
-              <div class="eye-in">
-                <input type="password" id="password" />
-                <i class="fa-solid fa-eye-slash" id="hidden"></i>
-              </div>
+            <span class="error">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p class="error-text">
+                Please enter at least 8 characters with number, symbol, small
+                and capital letters.
+              </p>
+            </span>
           </div>
+          <div class="btn-box confirm-password">
+            <label
+              ><i class="fa-solid fa-star-of-life"></i>Comfirm Password</label
+            >
+            <div class="eye-in">
+              <input type="password" id="password-1" class="cpassword" />
+              <i class="fa-solid fa-eye-slash" id="hidden-1"></i>
+            </div>
+            <span class="error">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p class="error-text">Password don't match.</p>
+            </span>
+          </div>
+
+          <!-- <div class="button">
+            <a href="core.html"><input type="text"></a>
+          </div> -->
           <div class="btn-log">
             <a href="core.html">Sign up</a>
           </div>
+
           <div class="p-text">
-            <p>Don't have an account?<a href="core.html" class="link"> Sign up</a></p>
+            <p>
+              Don't have an account?<a href="core.html" class="link">
+                Sign up</a
+              >
+            </p>
           </div>
+
           <div class="linear-or"></div>
+
           <div class="fb-color">
             <i class="fa-brands fa-facebook i-fb"></i>
             <button>Login with facebook</button>
           </div>
+
           <div class="google-logo">
             <button>Login with google</button>
             <img src="images/logogoogle.png" alt="google" />
-          </div>
           </div>
         </form>
       </section>

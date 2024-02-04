@@ -87,6 +87,9 @@ ul {
   background-color: green;
   color: white;
 }
+.btn-box-1 button > a {
+  color: white;
+}
 .btn-box-1 button:hover {
   background-color: darkgreen;
 }

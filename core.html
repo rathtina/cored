@@ -11,153 +11,152 @@
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
-  <body>
-    <header class="top-core">
-      <div class="navigation width-core">
-        <div class="core-nav">
-          <div class="img-logo">
-            <img src="images/core - Copy.png" alt="core" />
+    <header class="top">
+      <div class="top-core">
+        <div class="navigation width-core">
+          <div class="core-nav">
+            <div class="img-logo">
+              <img src="images/core - Copy.png" alt="core" />
+            </div>
+            <h2>core security</h2>
+            <div class="server-click" onclick="openPopup()">
+              <i class="fa-solid fa-server"></i>
+              <p>S8 Server | s8server</p>
+            </div>
           </div>
-          <h2>core security</h2>
-          <div class="server-click" onclick="openPopup()">
-            <i class="fa-solid fa-server"></i>
-            <p>S8 Server | s8server</p>
+          <div class="icon-nav">
+            <p>Rathtina Orn</p>
+            <span>
+              <i class="fa-solid fa-user" onclick="openUser()" id="open-bar"></i>
+              <i
+                class="fa-solid fa-arrows-to-circle"
+                class="zoom-none"
+                onclick="toggle_full_screen()"
+              ></i>
+            </span>
           </div>
         </div>
-        <div class="icon-nav">
-          <p>Rathtina Orn</p>
-          <span>
-            <i class="fa-solid fa-user" onclick="openUser()"></i>
-            <i
-              class="fa-solid fa-arrows-to-circle"
-              class="zoom-none"
-              onclick="toggle_full_screen()"
-            ></i>
+        <div class="aside">
+          <div id="close-bar"><i class="fa-solid fa-xmark"></i></div>
+          <div class="user-aside">
+            <i class="fa-solid fa-user"></i>
+            <h3>Rathtina Orn</h3>
+          </div>
+          <div class="nav-aside">
+            <div class="side-img">
+              <span><i class="fa-solid fa-earth-asia"></i> Languages</span>
+              <div class="img-nav">
+                <img
+                src="images/circle-flag-of-cambodia-free-png.webp"
+                alt="cambodia"
+              />
+              <img src="images/english-icon-png-21.jpg" alt="english" />
+              </div>
+            </div>
+            <div class="side-edit">
+              <i class="fa-solid fa-pen-to-square"></i> 
+              <a href="edit.html">Edit Profile</a>
+            </div>
+            <div class="side-change">
+              <i class="fa-solid fa-lock"></i> 
+              <a href="changecore.html">Change Password</a>
+            </div>
+            <div class="side-logout">
+              <i class="fa-solid fa-right-to-bracket"></i>
+              <a href="index.html">Log Out</a>
+            </div>
+          </div>
+        </div>
+        <div class="preview" id="preview">
+          <div class="cart-p-i">
+            <p>Tenant</p>
+            <i class="fa-solid fa-xmark" onclick="closePopup()"></i>
+          </div>
+          <button class="btn-pre">
+            <img src="images/localhost.png" alt="localhost" />
+            <p>(localhost)</p>
+          </button>
+          <div class="icon-server">
+            <i class="fa-solid fa-server"></i>
+            <select name="Server" size="1" id="server">
+              <option value="server" disabled>Server</option>
+              <option value="sntica">Antica</option>
+              <option value="assombra">Assombra</option>
+              <option value="astera">Astera</option>
+              <option value="belluma">Belluma</option>
+            </select>
+          </div>
+          <div class="line-core"></div>
+          <button class="btn-last-pre" onclick="clearField()">Cencel</button>
+        </div>
+        <!-- Preview server -->
+        <div class="userCart" id="userCart">
+          <div class="user-title">
+            <i class="fa-solid fa-user"></i>
+            <p>Rathtina Orn</p>
+          </div>
+          <span class="icon-lang">
+            <p><i class="fa-solid fa-earth-asia"></i> Languages</p>
+            <span class="img-lang">
+              <img
+                src="images/circle-flag-of-cambodia-free-png.webp"
+                alt="cambodia"
+              />
+              <img src="images/english-icon-png-21.jpg" alt="english" />
+            </span>
           </span>
+          <div class="edit">
+            <a href="edit.html"
+              ><i class="fa-solid fa-pen-to-square"></i> Edit Profile</a
+            >
+          </div>
+          <div class="change">
+            <a href="changecore.html"
+              ><i class="fa-solid fa-lock"></i> change Password</a
+            >
+          </div>
+          <div class="logout">
+            <a href="index.html"
+              ><i class="fa-solid fa-right-to-bracket"></i> Logout</a
+            >
+          </div>
+          <button onclick="closeUser()">close</button>
         </div>
       </div>
     </header>
-
     <section class="case width-container">
-      <h2>Core Studies</h2>
-      <p>
-        We are designers who create intelligent illustrations which boost you
-        business and aesthetics.
-      </p>
       <div class="container-case">
         <div class="box-case">
           <img src="images/document.png" alt="document" />
           <h3>Document</h3>
-          <p>
-            Write a short description, that will describe the title or something
-            informational and useful.
-          </p>
-          <button>Know more</button>
         </div>
         <div class="box-case">
           <img src="images/controler.webp" alt="controller" />
           <h3>Controller</h3>
-          <p>
-            Write a short description, that will describe the title or something
-            informational and useful.
-          </p>
-          <button>Know more</button>
         </div>
         <div class="box-case">
           <img src="images/entrance.webp" alt="Entrance" />
           <h3>Entrance</h3>
-          <p>
-            Write a short description, that will describe the title or something
-            informational and useful.
-          </p>
-          <button>Know more</button>
         </div>
         <div class="box-case">
           <img src="images/human.png" alt="Human" />
           <h3>Humen</h3>
-          <p>
-            Write a short description, that will describe the title or something
-            informational and useful.
-          </p>
-          <button>Know more</button>
         </div>
         <div class="box-case">
           <img src="images/invoicing.png" alt="Inviocing" />
           <h3>Inviocing</h3>
-          <p>
-            Write a short description, that will describe the title or something
-            informational and useful.
-          </p>
-          <button>Know more</button>
         </div>
         <div class="box-case">
           <img src="images/natt.png" alt="Natt" />
           <h3>Natt</h3>
-          <p>
-            Write a short description, that will describe the title or something
-            informational and useful.
-          </p>
-          <button>Know more</button>
         </div>
       </div>
     </section>
+    
 
-    <div class="preview" id="preview">
-      <div class="cart-p-i">
-        <p>Tenant</p>
-        <i class="fa-solid fa-xmark" onclick="closePopup()"></i>
-      </div>
-      <button class="btn-pre">
-        <img src="images/localhost.png" alt="localhost" />
-        <p>(localhost)</p>
-      </button>
-      <div class="icon-server">
-        <i class="fa-solid fa-server"></i>
-        <select name="Server" size="1" id="server">
-          <option value="server" disabled>Server</option>
-          <option value="sntica">Antica</option>
-          <option value="assombra">Assombra</option>
-          <option value="astera">Astera</option>
-          <option value="belluma">Belluma</option>
-        </select>
-      </div>
-      <div class="line-core"></div>
-      <button class="btn-last-pre" onclick="clearField()">Cencel</button>
-    </div>
-    <!-- Preview server -->
+    
 
-    <div class="userCart" id="userCart">
-      <div class="user-title">
-        <i class="fa-solid fa-user"></i>
-        <p>Rathtina Orn</p>
-      </div>
-      <span class="icon-lang">
-        <p><i class="fa-solid fa-earth-asia"></i> Languages</p>
-        <span class="img-lang">
-          <img
-            src="images/circle-flag-of-cambodia-free-png.webp"
-            alt="cambodia"
-          />
-          <img src="images/english-icon-png-21.jpg" alt="english" />
-        </span>
-      </span>
-      <div class="edit">
-        <a href="edit.html"
-          ><i class="fa-solid fa-pen-to-square"></i> Edit Profile</a
-        >
-      </div>
-      <div class="change">
-        <a href="changecore.html"
-          ><i class="fa-solid fa-lock"></i> change Password</a
-        >
-      </div>
-      <div class="logout">
-        <a href="index.html"
-          ><i class="fa-solid fa-right-to-bracket"></i> Logout</a
-        >
-      </div>
-      <button onclick="closeUser()">close</button>
-    </div>
+    
 
     <script src="app.js"></script>
   </body>

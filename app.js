@@ -1,3 +1,19 @@
+// right Bar of Menu
+const closeBar = document.querySelector(".fa-xmark");
+const openBar = document.querySelector("#open-bar");
+const rightBar = document.querySelector(".aside");
+
+if (openBar) {
+  openBar.addEventListener("click", () => {
+    rightBar.classList.add("open");
+  });
+}
+if (closeBar) {
+  closeBar.addEventListener("click", () => {
+    rightBar.classList.remove("open");
+  });
+}
+
 let eyeIcon = document.getElementById("hidden");
 let password = document.getElementById("password");
 
@@ -101,26 +117,26 @@ window.onscroll = () => {
   userCart.classList.remove("show-User");
 };
 
-// Error
-const form = document.querySelector("form"),
-  emailField = form.querySelector(".email-field"),
-  emailInput = emailField.querySelector(".email"),
-  passField = form.querySelector(".create-password"),
-  passInput = passField.querySelector(".password"),
-  cPassField = form.querySelector(".confirm-password"),
-  cPassInput = cPassField.querySelector(".cpassword");
-// Email Validtion
-function checkEmail() {
-  const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-  if (emailInput.value.match(pattern)) {
-    return emailField.classList.add("invalid");
-  }
-  emailField.classList.remove("invalid");
-}
+// // Error
+// const form = document.querySelector("form"),
+//   emailField = form.querySelector(".email-field"),
+//   emailInput = emailField.querySelector(".email"),
+//   passField = form.querySelector(".create-password"),
+//   passInput = passField.querySelector(".password"),
+//   cPassField = form.querySelector(".confirm-password"),
+//   cPassInput = cPassField.querySelector(".cpassword");
+// // Email Validtion
+// function checkEmail() {
+//   const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+//   if (emailInput.value.match(pattern)) {
+//     return emailField.classList.add("invalid");
+//   }
+//   emailField.classList.remove("invalid");
+// }
 
-// Calling Function on form submit
-form.addEventListener("submit", (e) => {
-  e.preventDefault(); //preventing form submitting
-  checkEmail();
-  emailInput.addEventListener("keyup", checkEmail);
-});
+// // Calling Function on form submit
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault(); //preventing form submitting
+//   checkEmail();
+//   emailInput.addEventListener("keyup", checkEmail);
+// });

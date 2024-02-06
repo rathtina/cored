@@ -1331,8 +1331,7 @@ nav #icon {
   background-color: #cacaca;
 }
 .btn-scroll {
-  gap: 0.5rem;
-  height: 10rem;
+  height: 150px;
   overflow: auto;
   padding: 0 0.5rem;
 }

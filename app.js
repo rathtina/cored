@@ -117,26 +117,13 @@ window.onscroll = () => {
   userCart.classList.remove("show-User");
 };
 
-// // Error
-// const form = document.querySelector("form"),
-//   emailField = form.querySelector(".email-field"),
-//   emailInput = emailField.querySelector(".email"),
-//   passField = form.querySelector(".create-password"),
-//   passInput = passField.querySelector(".password"),
-//   cPassField = form.querySelector(".confirm-password"),
-//   cPassInput = cPassField.querySelector(".cpassword");
-// // Email Validtion
-// function checkEmail() {
-//   const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-//   if (emailInput.value.match(pattern)) {
-//     return emailField.classList.add("invalid");
-//   }
-//   emailField.classList.remove("invalid");
+Tick;
+const allBtn = document.querySelectorAll(".btn-pre");
+const iconTick = allBtn.querySelector(".fa-check");
+allBtn.addEventListener("click", () => {
+  iconTick.classList.add("tick");
+});
+// function onClicking() {
+//   var ticking = document.querySelector(".fa-check");
+//   ticking.style.display = "block";
 // }
-
-// // Calling Function on form submit
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault(); //preventing form submitting
-//   checkEmail();
-//   emailInput.addEventListener("keyup", checkEmail);
-// });

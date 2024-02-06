@@ -1291,7 +1291,8 @@ nav #icon {
   width: 100%;
 }
 .btn-pre img {
-  max-width: 3rem;
+  padding: 0 0.3rem;
+  max-width: 2.3rem;
 }
 .preview {
   position: absolute;
@@ -1341,12 +1342,27 @@ nav #icon {
   align-items: center;
   margin: 0.5rem 0;
   border: 1px solid #cacaca;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   width: 100%;
-  padding: 0.2rem 0;
+  padding: 0.5rem 0;
   outline: 0;
   color: black;
   position: relative;
+}
+.btn-pre .fa-check {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  text-align: center;
+  border: 1px solid green;
+  border-radius: 1rem;
+  color: green;
+}
+.btn-pre .fa-check.tick {
+  display: block;
 }
 .icon-server select {
   outline: 0;

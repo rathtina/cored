@@ -117,13 +117,7 @@ window.onscroll = () => {
   userCart.classList.remove("show-User");
 };
 
-Tick;
-const allBtn = document.querySelectorAll(".btn-pre");
-const iconTick = allBtn.querySelector(".fa-check");
-allBtn.addEventListener("click", () => {
-  iconTick.classList.add("tick");
-});
-// function onClicking() {
-//   var ticking = document.querySelector(".fa-check");
-//   ticking.style.display = "block";
-// }
+//Tick;
+function onClicking() {
+  v
+}

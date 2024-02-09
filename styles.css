@@ -776,6 +776,7 @@ nav #icon {
   background-color: white;
   box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.5);
   padding: 1.5rem 1rem;
+  width: 180px;
 }
 .box-case > h3 {
   font-size: 1.5rem;
@@ -1711,6 +1712,12 @@ nav #icon {
   .card-edit {
     margin-top: 22rem;
   }
+  .box-case {
+    width: 215px;
+  }
+  .container-case {
+    gap: 2rem;
+  }
 }
 
 @media screen and (max-width: 912px) {
@@ -1808,9 +1815,9 @@ nav #icon {
     top: 15.5%;
     transform: translate(-40%, -50%) scale(1);
   }
-  /* .box-case {
+  .box-case {
     width: 188px;
-  } */
+  }
   .container-case {
     gap: 2.2rem;
   }
@@ -1910,6 +1917,15 @@ nav #icon {
   .case {
     margin-top: 3.5rem;
   }
+  .box-case {
+    width: 160px;
+  }
+  .container-case {
+    gap: 1.7rem;
+  }
+  .case {
+    margin-top: 4.4rem;
+  }
 }
 @media screen and (max-width: 540px) {
   .case {
@@ -1919,9 +1935,9 @@ nav #icon {
     grid-template-columns: auto auto auto;
     gap: 0.5rem;
   }
-  /* .box-case {
-    max-width: 150px;
-  } */
+  .box-case {
+    max-width: 140px;
+  }
   .preview {
     width: 17rem;
   }
@@ -2256,7 +2272,10 @@ nav #icon {
   }
   .container-case {
     grid-template-columns: auto auto;
-    gap: 2.3rem;
+    gap: 2rem;
+  }
+  .box-case {
+    width: 170px;
   }
   .box-case > h3 {
     font-size: 1rem;

@@ -767,7 +767,7 @@ nav #icon {
   grid-template-columns: auto auto auto auto;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 .box-case {
   display: flex;
@@ -776,7 +776,6 @@ nav #icon {
   background-color: white;
   box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.5);
   padding: 1.5rem 1rem;
-  max-width: 200px;
 }
 .box-case > h3 {
   font-size: 1.5rem;
@@ -800,7 +799,7 @@ nav #icon {
   background-color: green;
 }
 .box-case > img {
-  max-width: 130px;
+  max-width: 100px;
 }
 .box-case > button:hover {
   background-color: darkgreen;
@@ -1809,8 +1808,11 @@ nav #icon {
     top: 15.5%;
     transform: translate(-40%, -50%) scale(1);
   }
-  .box-case {
+  /* .box-case {
     width: 188px;
+  } */
+  .container-case {
+    gap: 2.2rem;
   }
 }
 @media screen and (max-width: 830px) {
@@ -1911,14 +1913,15 @@ nav #icon {
 }
 @media screen and (max-width: 540px) {
   .case {
-    margin-top: 3.5rem;
+    margin-top: 3rem;
   }
   .container-case {
     grid-template-columns: auto auto auto;
+    gap: 0.5rem;
   }
-  .box-case {
+  /* .box-case {
     max-width: 150px;
-  }
+  } */
   .preview {
     width: 17rem;
   }
@@ -2253,7 +2256,7 @@ nav #icon {
   }
   .container-case {
     grid-template-columns: auto auto;
-    gap: 2.5rem;
+    gap: 2.3rem;
   }
   .box-case > h3 {
     font-size: 1rem;

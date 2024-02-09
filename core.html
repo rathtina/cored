@@ -19,7 +19,7 @@
           </div>
           <h2>core security</h2>
           <div class="server-click" onclick="openPopup()">
-            <i class="fa-solid fa-server"></i>
+            <i class="fa-solid fa-server" id="server"></i>
             <p>S8 Server | s8server</p>
           </div>
         </div>
@@ -72,6 +72,53 @@
       </div>
     </div>
 
+    <div class="left-bar">
+      <i class="fa-solid fa-xmark" id="close-left"></i>
+      <p>Tenant</p>
+      <div class="right-btn">
+        <button class="btn-pre">
+          <img src="images/Dell.png" alt="Dell" />
+          <p>Dell</p>
+        </button>
+        <button class="btn-pre">
+          <img src="images/FedEx.png" alt="FedEx" />
+          <p>FedEx</p>
+        </button>
+        <button class="btn-pre">
+          <img src="images/Macdolnal.png" alt="Macdolnal" />
+          <p>McDonald</p>
+        </button>
+        <button class="btn-pre">
+          <img src="images/Volkswagen.png" alt="Volkswagen" />
+          <p>Volkswagen</p>
+        </button>
+        <button class="btn-pre">
+          <img src="images/target.png" alt="target" />
+          <p>Target</p>
+        </button>
+        <button class="btn-pre">
+          <img src="images/MTV.png" alt="MTV" />
+          <p>MTV</p>
+        </button>
+        <button class="btn-pre">
+          <img src="images/Spotify.png" alt="Spotify" />
+          <p>Spotify</p>
+        </button>
+        <button class="btn-pre">
+          <img src="images/intel.png" alt="intel" />
+          <p>Intel</p>
+        </button>
+        <button class="btn-pre">
+          <img src="images/logogoogle.png" alt="google" />
+          <p>Google</p>
+        </button>
+      </div>
+      <div class="line-core"></div>
+      <div class="con-btn-right">
+        <button class="btn-left" onclick="clearField()">Cencel</button>
+      </div>
+    </div>
+
     <div class="preview" id="preview">
       <div class="cart-p-i">
         <p>Tenant</p>
@@ -80,7 +127,7 @@
       <div class="btn-scroll">
         <div class="con-btn">
           <i class="fa-solid fa-check" id="check"></i>
-          <button class="btn-pre" onclick="onClicking()">
+          <button class="btn-pre">
             <img src="images/Dell.png" alt="Dell" />
             <p>Dell</p>
           </button>
@@ -179,6 +226,7 @@
       <button class="btn-last-pre" onclick="clearField()">Cencel</button>
     </div>
     <!-- Preview server -->
+
     <div class="userCart" id="userCart">
       <div class="user-title">
         <i class="fa-solid fa-user"></i>

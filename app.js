@@ -13,6 +13,20 @@ if (closeBar) {
     rightBar.classList.remove("open");
   });
 }
+// left menu bar
+const leftmenu = document.querySelector(".left-bar");
+const closeleft = document.querySelector("#close-left");
+const openleft = document.querySelector("#server");
+if (openleft) {
+  openleft.addEventListener("click", () => {
+    leftmenu.classList.add("open-left");
+  });
+}
+if (closeleft) {
+  closeleft.addEventListener("click", () => {
+    leftmenu.classList.remove("open-left");
+  });
+}
 
 let eyeIcon = document.getElementById("hidden");
 let password = document.getElementById("password");
@@ -116,8 +130,3 @@ window.onscroll = () => {
   preview.classList.remove("open-cart");
   userCart.classList.remove("show-User");
 };
-
-//Tick;
-function onClicking() {
-  v
-}

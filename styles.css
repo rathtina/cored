@@ -749,7 +749,7 @@ nav #icon {
 /* -------- Case Studies--------*/
 .case {
   position: relative;
-  margin-top: 4.4rem;
+  top: 2.3rem;
 }
 .case > h2 {
   text-transform: uppercase;
@@ -764,10 +764,10 @@ nav #icon {
 }
 .container-case {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(4, 160px);
+  grid-template-rows: repeat(2, 160px);
   justify-content: center;
   align-items: center;
-  gap: 1rem;
 }
 .box-case {
   display: flex;
@@ -775,13 +775,14 @@ nav #icon {
   align-items: center;
   background-color: white;
   box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.5);
-  padding: 1.5rem 1rem;
+  padding: 1.5rem;
   width: 180px;
+  height: 180px;
 }
 .box-case > h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-top: 0.5rem;
-  margin-bottom: 0.7rem;
+  /* margin-bottom: 0.7rem; */
   color: black;
 }
 .box-case > p {
@@ -800,7 +801,7 @@ nav #icon {
   background-color: green;
 }
 .box-case > img {
-  max-width: 100px;
+  max-width: 90px;
 }
 .box-case > button:hover {
   background-color: darkgreen;
@@ -1715,9 +1716,6 @@ nav #icon {
   .box-case {
     width: 215px;
   }
-  .container-case {
-    gap: 2rem;
-  }
 }
 
 @media screen and (max-width: 912px) {
@@ -1928,15 +1926,17 @@ nav #icon {
   }
 }
 @media screen and (max-width: 540px) {
-  .case {
-    margin-top: 3rem;
-  }
+  /* .case{
+    margin: 4rem;
+  } */
   .container-case {
-    grid-template-columns: auto auto auto;
-    gap: 0.5rem;
+    grid-template-rows: repeat(4, 195px);
+    grid-template-columns: repeat(4, 200px);
+    gap: 1rem;
   }
   .box-case {
-    max-width: 140px;
+    width: 195px;
+    height: 195px;
   }
   .preview {
     width: 17rem;
@@ -2272,11 +2272,12 @@ nav #icon {
   }
   .container-case {
     grid-template-columns: auto auto;
-    gap: 2rem;
+    gap: 0.6rem;
   }
-  .box-case {
-    width: 170px;
-  }
+  /* .box-case {
+    width: 150px;
+
+  } */
   .box-case > h3 {
     font-size: 1rem;
   }
@@ -2354,8 +2355,19 @@ nav #icon {
   .card-edit {
     margin-top: 13rem;
   }
-  .box-case > img {
+  /* .box-case > img {
     max-width: 110px;
+  } */
+  .container-case {
+    grid-template-columns: repeat(2, 145px);
+    grid-template-rows: repeat(3, 150px);
+  }
+  .case {
+    margin: 6rem;
+  }
+  .box-case {
+    width: 175px;
+    height: 180px;
   }
 }
 

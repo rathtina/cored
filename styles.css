@@ -2370,12 +2370,13 @@ nav #icon {
     max-width: 110px;
   } */
   .container-case {
-    grid-template-columns: repeat(2, 145px);
-    grid-template-rows: repeat(3, 150px);
+    grid-template-columns: repeat(2, 149px);
+    grid-template-rows: repeat(3, 155px);
   }
   .case {
     position: relative;
-    right: 1rem;
+    right: 0.8rem;
+    top: 2.3rem;
   }
   .box-case {
     width: 175px;

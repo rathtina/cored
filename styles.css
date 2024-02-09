@@ -1903,7 +1903,7 @@ nav #icon {
     transform: translate(-50%, -50%) scale(1);
   }
   .container-case {
-    gap: 1.5rem;
+    gap: 1rem;
   }
   .case {
     margin-top: 3.5rem;
@@ -2253,7 +2253,7 @@ nav #icon {
   }
   .container-case {
     grid-template-columns: auto auto;
-    gap: 2.8rem;
+    gap: 2.5rem;
   }
   .box-case > h3 {
     font-size: 1rem;
@@ -2346,27 +2346,27 @@ nav #icon {
   }
 }
 @media screen and (max-height: 850px) {
-  /* .open-cart {
+  .open-cart {
     top: 25%;
     transform: translate(-50%, -50%) scale(1);
-  } */
+  }
 }
 @media screen and (max-height: 780px) {
-  /* .open-cart {
+  .open-cart {
     top: 28.5%;
     transform: translate(-50%, -50%) scale(1);
-  } */
+  }
 }
 @media screen and (max-height: 700px) {
-  /* .card-edit {
+  .card-edit {
     margin-top: 12.5rem;
-  } */
+  }
 }
 @media screen and (max-height: 600px) {
-  /* .open-cart {
+  .open-cart {
     top: 35.5%;
     transform: translate(-50%, -50%) scale(1);
-  } */
+  }
   .card-edit {
     margin-top: 11.5rem;
   }

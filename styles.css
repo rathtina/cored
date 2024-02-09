@@ -2363,7 +2363,7 @@ nav #icon {
     grid-template-rows: repeat(3, 150px);
   }
   .case {
-    margin: 6rem;
+    right: 1rem;
   }
   .box-case {
     width: 175px;

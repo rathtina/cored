@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>changecore</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/2d0f2967f9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="top-core">
+      <div class="navigation width-core">
+        <div class="core-nav">
+          <div class="img-logo">
+            <img src="images/core - Copy.png" alt="core" />
+          </div>
+          <h2>core security</h2>
+          <div class="server-click" onclick="openPopup()">
+            <i class="fa-solid fa-server"></i>
+            <p>S8 Server | s8server</p>
+          </div>
+        </div>
+        <div class="icon-nav">
+          <p>Rathtina Orn</p>
+          <span>
+            <i class="fa-solid fa-user" onclick="openUser()"></i>
+            <i
+              class="fa-solid fa-arrows-to-circle"
+              class="zoom-none"
+              onclick="toggle_full_screen()"
+            ></i>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <div class="card-edit">
+      <div class="card">
+        <form>
+          <h2>កែប្រែលេខសម្ងាត់</h2>
+          <div class="btn-box">
+            <label><i class="fa-solid fa-star-of-life"></i>អ៊ីម៉ែល</label>
+            <input type="text" placeholder="ornrathtina123@gmailcom" disabled />
+          </div>
+          <div class="btn-box">
+            <label
+              ><i class="fa-solid fa-star-of-life"></i>លេខសម្ងាត់ចាស់</label
+            >
+            <div class="eye-in">
+              <input type="password" id="password" />
+              <i class="fa-solid fa-eye-slash" id="hidden"></i>
+            </div>
+          </div>
+          <div class="btn-box">
+            <label
+              ><i class="fa-solid fa-star-of-life"></i>លេខសម្ងាត់ថ្មី</label
+            >
+            <div class="eye-in">
+              <input type="password" id="password-1" />
+              <i class="fa-solid fa-eye-slash" id="hidden-1"></i>
+            </div>
+          </div>
+          <div class="btn-box">
+            <label
+              ><i class="fa-solid fa-star-of-life"></i>បញ្ជាក់លេខសម្ងាត់</label
+            >
+            <div class="eye-in">
+              <input type="password" id="password-2" />
+              <i class="fa-solid fa-eye-slash" id="hidden-2"></i>
+            </div>
+          </div>
+          <div class="check-box">
+            <label><input type="checkbox" value="Enable 2FA" />បើក</label>
+            <div class="box-raduis">
+              <label>
+                <input type="radio" value="Email" name="social media" />
+                អ៊ីម៉ែល
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  value="Phone Number"
+                  name="social media"
+                />លេខទូរស័ព្ទ
+              </label>
+            </div>
+          </div>
+          <div class="container-btn-log">
+            <div class="btn-log">
+              <a href="cambodia.html">រក្សាទុក</a>
+            </div>
+            <div class="btn-gray">
+              <a href="cambodia.html">បោះបង់</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

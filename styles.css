@@ -1401,7 +1401,7 @@ nav #icon {
   width: 100%;
   height: 0.5px;
   background-color: #cacaca;
-  margin: 1rem 0;
+  margin-bottom: 0.5rem;
 }
 .btn-last-pre {
   float: right;
@@ -2315,7 +2315,6 @@ nav #icon {
     left: 0;
   }
   .left-bar > p {
-    margin-top: 5rem;
     margin-bottom: 0.5rem;
     text-align: start;
     font-size: 1.3rem;
@@ -2370,13 +2369,12 @@ nav #icon {
     max-width: 110px;
   } */
   .container-case {
-    grid-template-columns: repeat(2, 149px);
-    grid-template-rows: repeat(3, 155px);
+    grid-template-columns: repeat(2, 151px);
+    grid-template-rows: repeat(3, 157px);
   }
   .case {
-    position: relative;
     right: 0.8rem;
-    top: 2.3rem;
+    top: 2.5rem;
   }
   .box-case {
     width: 175px;

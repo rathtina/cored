@@ -2369,16 +2369,16 @@ nav #icon {
     max-width: 110px;
   } */
   .container-case {
-    grid-template-columns: repeat(2, 151px);
-    grid-template-rows: repeat(3, 157px);
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(3, 155px);
   }
   .case {
-    right: 0.8rem;
-    top: 2.5rem;
+    right: 0.5rem;
+    top: 2.3rem;
   }
   .box-case {
-    width: 175px;
-    height: 180px;
+    width: 167px;
+    height: 177px;
   }
 }
 

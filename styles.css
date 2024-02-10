@@ -2306,9 +2306,8 @@ nav #icon {
     height: 200vh;
     background-color: white;
     box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.4);
-    transition: 0.3s ease;
+    transition: 0.3s ease-in-out;
     visibility: visible;
-    transition: left 0.5 linear;
     z-index: 999;
   }
   .left-bar.open-left {
@@ -2369,16 +2368,16 @@ nav #icon {
     max-width: 110px;
   } */
   .container-case {
-    grid-template-columns: repeat(2, 150px);
-    grid-template-rows: repeat(3, 155px);
+    grid-template-columns: repeat(2, 145px);
+    grid-template-rows: repeat(3, 145px);
   }
   .case {
-    right: 0.5rem;
+    right: 0.7rem;
     top: 2.3rem;
   }
   .box-case {
-    width: 170px;
-    height: 180px;
+    width: 165px;
+    height: 165px;
   }
 }
 

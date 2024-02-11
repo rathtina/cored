@@ -774,7 +774,7 @@ nav #icon {
   flex-direction: column;
   align-items: center;
   background-color: white;
-  box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.2);
+  box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.3);
   padding: 1.5rem;
   width: 180px;
   height: 180px;
@@ -1727,8 +1727,17 @@ nav #icon {
   .card-edit {
     margin-top: 22rem;
   }
+  .case {
+    top: 6rem;
+  }
+  .container-case {
+    grid-template-columns: repeat(4, 230px);
+    grid-template-rows: repeat(2, 230px);
+    gap: 1rem;
+  }
   .box-case {
-    width: 215px;
+    width: 220px;
+    height: 220px;
   }
 }
 
@@ -1827,11 +1836,14 @@ nav #icon {
     top: 15.5%;
     transform: translate(-40%, -50%) scale(1);
   }
-  .box-case {
-    width: 188px;
-  }
   .container-case {
-    gap: 2.2rem;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 1rem;
+  }
+  .box-case {
+    width: 190px;
+    height: 200px;
   }
 }
 @media screen and (max-width: 830px) {
@@ -1923,20 +1935,18 @@ nav #icon {
     top: 21%;
     transform: translate(-50%, -50%) scale(1);
   }
+  .case {
+    position: relative;
+    top: 6rem;
+  }
   .container-case {
+    grid-template-rows: repeat(2, 170px);
+    grid-template-columns: repeat(4, 170px);
     gap: 1rem;
   }
-  .case {
-    margin-top: 3.5rem;
-  }
   .box-case {
-    width: 160px;
-  }
-  .container-case {
-    gap: 1.7rem;
-  }
-  .case {
-    margin-top: 4.4rem;
+    width: 170px;
+    height: 170px;
   }
 }
 @media screen and (max-width: 540px) {
@@ -1944,13 +1954,13 @@ nav #icon {
     top: 1.3rem;
   }
   .container-case {
-    grid-template-rows: repeat(4, 195px);
-    grid-template-columns: repeat(4, 200px);
-    gap: 1rem;
+    grid-template-rows: repeat(2, 160px);
+    grid-template-columns: repeat(3, 160px);
+    gap: 0.8rem;
   }
   .box-case {
-    width: 195px;
-    height: 195px;
+    width: 160px;
+    height: 160px;
   }
   .preview {
     width: 17rem;
@@ -2282,17 +2292,18 @@ nav #icon {
     margin-top: 15rem;
   }
   .case {
-    right: 0.2rem;
+    position: relative;
+    right: 0.6rem;
     top: 2.1rem;
   }
   .container-case {
-    grid-template-columns: repeat(2, 180px);
-    grid-template-rows: repeat(3, 180px);
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 170px);
+    grid-template-rows: repeat(3, 170px);
+    gap: 2rem;
   }
   .box-case {
-    width: 185px;
-    height: 185px;
+    width: 187px;
+    height: 187px;
   }
   .box-case > h3 {
     font-size: 1rem;
@@ -2384,12 +2395,9 @@ nav #icon {
   }
 }
 
-@media screen and (max-height: 917px) {
+@media screen and (max-height: 932px) {
   .case {
-    margin-top: 4.1rem;
-  }
-  .container-case {
-    gap: 2.2rem;
+    top: 6rem;
   }
 }
 @media screen and (max-height: 850px) {

@@ -2294,7 +2294,7 @@ nav #icon {
   .case {
     position: relative;
     right: 0.6rem;
-    top: 2.3rem;
+    top: 2.5rem;
   }
   .container-case {
     grid-template-columns: repeat(2, 170px);

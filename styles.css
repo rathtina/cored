@@ -764,8 +764,8 @@ nav #icon {
 }
 .container-case {
   display: grid;
-  grid-template-columns: repeat(4, 160px);
-  grid-template-rows: repeat(2, 160px);
+  grid-template-columns: repeat(4, 170px);
+  grid-template-rows: repeat(2, 170px);
   justify-content: center;
   align-items: center;
 }
@@ -776,8 +776,8 @@ nav #icon {
   background-color: white;
   box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.3);
   padding: 1.5rem;
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
 }
 .box-case > h3 {
   font-size: 1rem;
@@ -2294,7 +2294,7 @@ nav #icon {
   .case {
     position: relative;
     right: 0.6rem;
-    top: 2.1rem;
+    top: 2.3rem;
   }
   .container-case {
     grid-template-columns: repeat(2, 170px);

@@ -764,10 +764,11 @@ nav #icon {
 }
 .container-case {
   display: grid;
-  grid-template-columns: repeat(4, 170px);
-  grid-template-rows: repeat(2, 170px);
+  grid-template-columns: repeat(4, 175px);
+  grid-template-rows: repeat(2, 175px);
   justify-content: center;
   align-items: center;
+  gap: 1.5rem;
 }
 .box-case {
   display: flex;
@@ -776,8 +777,8 @@ nav #icon {
   background-color: white;
   box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.3);
   padding: 1.5rem;
-  width: 160px;
-  height: 160px;
+  width: 175px;
+  height: 175px;
 }
 .box-case > h3 {
   font-size: 1rem;

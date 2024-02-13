@@ -74,7 +74,6 @@ ul {
   font-weight: 500;
   border-radius: 0.6rem;
   position: relative;
-  pointer-events: none;
 }
 .btn-box-1 {
   width: 100%;
@@ -100,6 +99,7 @@ ul {
 }
 .btn-box-1:hover {
   background-color: darkgreen;
+  pointer-events: none;
   color: white;
 }
 .btn-box button > a {

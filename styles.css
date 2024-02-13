@@ -753,7 +753,6 @@ nav #icon {
 /* -------- Case Studies--------*/
 .case {
   position: relative;
-  top: 2.3rem;
 }
 .case > h2 {
   text-transform: uppercase;
@@ -772,7 +771,7 @@ nav #icon {
   grid-template-rows: repeat(2, 175px);
   justify-content: center;
   align-items: center;
-  gap: 1.5link-arem;
+  gap: 1.5rem;
 }
 .box-case {
   display: flex;
@@ -1318,7 +1317,7 @@ nav #icon {
 }
 .open-cart {
   visibility: visible;
-  top: 28%;
+  top: 30%;
   position: fixed;
   transform: translate(-50%, -50%) scale(1);
 }
@@ -1430,7 +1429,7 @@ nav #icon {
 }
 .show-User {
   visibility: visible;
-  top: 30%;
+  top: 34%;
   position: fixed;
   transform: translate(-50%, -50%) scale(1);
 }

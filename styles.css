@@ -163,6 +163,7 @@ ul {
 }
 
 .card form .link-a > a:hover {
+  border: none;
   color: blue;
   text-decoration: underline;
 }
@@ -181,6 +182,7 @@ ul {
 .card form .p-text p a:hover {
   color: blue;
   text-decoration: underline;
+  border: 0;
 }
 .card .linear-or {
   position: relative;

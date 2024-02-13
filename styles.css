@@ -120,6 +120,7 @@ ul {
   text-decoration: none;
   color: rgb(80, 80, 241);
   font-size: 0.9rem;
+  border: 0;
 }
 
 /* ---------Error-------- */
@@ -175,6 +176,7 @@ ul {
 .card form .p-text p a {
   text-decoration: none;
   color: rgb(57, 57, 237);
+  border: none;
 }
 .card form .p-text p a:hover {
   color: blue;
@@ -768,7 +770,7 @@ nav #icon {
   grid-template-rows: repeat(2, 175px);
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.5link-arem;
 }
 .box-case {
   display: flex;

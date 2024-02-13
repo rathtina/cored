@@ -59,7 +59,7 @@ let eyeIcontwo = document.getElementById("hidden-2");
 let passwordtwo = document.getElementById("password-2");
 eyeIcontwo.onclick = function () {
   if (passwordtwo.type == "password-2") {
-    passwordtwo.type = "text";
+    passwordtwo.type = "text-2";
   } else {
     passwordtwo.type = "password-2";
   }

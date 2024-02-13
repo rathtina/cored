@@ -75,7 +75,9 @@ ul {
   border-radius: 0.6rem;
   position: relative;
 }
-.btn-box-1 button {
+.btn-box-1 a {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 100%;
   border: none;
@@ -88,12 +90,9 @@ ul {
   background-color: green;
   color: white;
 }
-.btn-box-1 button > a {
-  color: white;
-  border: 0;
-}
-.btn-box-1 button:hover {
+.btn-box-1 a:hover {
   background-color: darkgreen;
+  color: white;
 }
 .btn-box button > a {
   font-size: 1rem;

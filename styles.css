@@ -1971,6 +1971,9 @@ nav #icon {
   }
 }
 @media screen and (max-width: 468px) {
+  .zoom-none {
+    visibility: hidden;
+  }
   .top-page .search-box > input {
     width: 15rem;
   }

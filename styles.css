@@ -1254,20 +1254,6 @@ nav #icon {
   z-index: 999;
   background-color: green;
 }
-.overlay-page {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: white;
-  display: none;
-  z-index: 999;
-}
-.overlay-page {
-  opacity: 0.9;
-  transition: background-color 0.5s linear;
-}
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -2372,6 +2358,19 @@ nav #icon {
     top: 1.5rem;
     left: 90%;
     font-size: 1.5rem;
+  }
+  .overlay-page {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: none;
+  }
+  .overlay-page {
+    opacity: 0.9;
+    transition: background-color 0.5s linear;
   }
 }
 

@@ -99,7 +99,6 @@ ul {
 }
 .btn-box-1:hover {
   background-color: darkgreen;
-  pointer-events: none;
   color: white;
 }
 .btn-box button > a {

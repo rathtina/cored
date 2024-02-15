@@ -19,21 +19,25 @@
           </div>
           <h2>core security</h2>
           <div class="server-click" onclick="openPopup()">
-            <i class="fa-solid fa-server"></i>
+            <i class="fa-solid fa-server" id="server"></i>
             <p>S8 Server | s8server</p>
           </div>
         </div>
         <div class="icon-nav">
-          <p>Rathtina Orn</p>
-          <span>
-            <i class="fa-solid fa-user" onclick="openUser()"></i>
+          <!-- <p>Rathtina Orn</p> -->
+          <div class="head-user">
+            <span class="img-head" onclick="openUser()" id="open-bar"
+              ><img src="images/man.jpg!d" alt="man" />
+              <i class="fa-solid fa-bars-staggered"></i>
+            </span>
             <i
               class="fa-solid fa-arrows-to-circle zoom-none"
               onclick="toggle_full_screen()"
             ></i>
-          </span>
+          </div>
         </div>
       </div>
+      <div class="overlay-page"></div>
     </header>
 
     <div class="card-edit">

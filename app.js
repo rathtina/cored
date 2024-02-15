@@ -136,3 +136,9 @@ window.onscroll = () => {
   preview.classList.remove("open-cart");
   userCart.classList.remove("show-User");
 };
+// languages
+const sideLang = document.querySelector(".lang-side");
+const containLang = document.querySelector(".container-kheng");
+sideLang.dispatchEvent("click", () => {
+  containLang.classList.toggle("show-now");
+});

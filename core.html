@@ -24,14 +24,18 @@
           </div>
         </div>
         <div class="icon-nav">
-          <p>Rathtina Orn</p>
-          <span>
-            <i class="fa-solid fa-user" onclick="openUser()" id="open-bar"></i>
+          <!-- <p>Rathtina Orn</p> -->
+          <div class="head-user">
+            <span class="img-head" onclick="openUser()" id="open-bar"
+              ><img src="images/man.jpg!d" alt="man"
+            />
+            <i class="fa-solid fa-bars-staggered"></i>
+           </span>
             <i
               class="fa-solid fa-arrows-to-circle zoom-none"
               onclick="toggle_full_screen()"
             ></i>
-          </span>
+          </div>
         </div>
       </div>
       <div class="overlay-page"></div>
@@ -40,35 +44,48 @@
     <div class="aside">
       <div id="close-bar"><i class="fa-solid fa-xmark"></i></div>
       <div class="user-aside">
-        <i class="fa-solid fa-user"></i>
-        <h3>Rathtina Orn</h3>
+        <div class="user-img">
+          <img src="images/man.jpg!d" alt="man" />
+        </div>
+        <div class="user-content">
+          <h3>Orn Rathtina</h3>
+          <p>ornrathtina123@gmail.com</p>
+        </div>
       </div>
       <div class="nav-aside">
         <div class="side-img">
-          <span><i class="fa-solid fa-earth-asia"></i> Languages</span>
-          <div class="img-nav">
-            <a href="cambodia.html"
-              ><img
-                src="images/circle-flag-of-cambodia-free-png.webp"
-                alt="cambodia"
-            /></a>
-            <a href="core.html"
-              ><img src="images/english-icon-png-21.jpg" alt="english"
-            /></a>
+          <div class="lang-side">
+            <div class="lang">
+              <i class="fa-solid fa-language"></i>
+              <p>Languages</p>
+            </div>
+            <i class="fa-solid fa-angle-down" id="arrow"></i>
+          </div>
+          <div class="container-kheng">
+            <div class="eng-kh">
+              <a href="cambodia.html">
+                <img src="images/circle-flag-of-cambodia-free-png.webp" alt="khmer">
+                <p>Khmer</p>
+              </a>
+              <a href="core.html">
+                <img src="images/english-icon-png-21.jpg" alt="english">
+                <p>english</p>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="side-edit">
+        <a class="side-edit" href="edit.html">
           <i class="fa-solid fa-pen-to-square"></i>
-          <a href="edit.html">Edit Profile</a>
-        </div>
-        <div class="side-change">
+          <p>Edit Profile</p>
+        </a>
+        <a class="side-change" href="changecore.html">
           <i class="fa-solid fa-lock"></i>
-          <a href="changecore.html">Change Password</a>
-        </div>
-        <div class="side-logout">
+          <p>Change Password</p>
+        </a>
+        <a class="side-logout" href="index.html">
           <i class="fa-solid fa-right-to-bracket"></i>
-          <a href="index.html">Log Out</a>
-        </div>
+          <p href="index.html">Log Out</p>
+        </a>
       </div>
     </div>
 
@@ -210,18 +227,6 @@
           </button>
         </div>
       </div>
-
-      <!-- <div class="icon-server">
-        <i class="fa-solid fa-server"></i>
-        <select name="Server" size="1" id="server">
-          <option value="server" disabled>Server</option>
-          <option value="sntica">Antica</option>
-          <option value="assombra">Assombra</option>
-          <option value="astera">Astera</option>
-          <option value="belluma">Belluma</option>
-        </select>
-      </div> -->
-
       <div class="line-core"></div>
       <button class="btn-last-pre" onclick="clearField()">Cencel</button>
     </div>
@@ -229,17 +234,23 @@
 
     <div class="userCart" id="userCart">
       <div class="user-title">
-        <i class="fa-solid fa-user"></i>
-        <p>Rathtina Orn</p>
+        <img src="images/man.jpg!d" alt="man" />
+        <div class="p-user">
+          <p>Rathtina Orn</p>
+          <span>ornrathtina123@gmail.com</span>
+        </div>
       </div>
       <span class="icon-lang">
         <p><i class="fa-solid fa-earth-asia"></i> Languages</p>
         <span class="img-lang">
-          <img
-            src="images/circle-flag-of-cambodia-free-png.webp"
-            alt="cambodia"
-          />
-          <img src="images/english-icon-png-21.jpg" alt="english" />
+          <a href="cambodia.html"
+            ><img
+              src="images/circle-flag-of-cambodia-free-png.webp"
+              alt="cambodia"
+          /></a>
+          <a href="core.html"
+            ><img src="images/english-icon-png-21.jpg" alt="english"
+          /></a>
         </span>
       </span>
       <div class="edit">

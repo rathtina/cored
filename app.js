@@ -66,11 +66,19 @@ eyeIcontwo.onclick = function () {
 };
 // Link Navigation
 const activePage = window.location.pathname;
-const navLink = document.querySelectorAll("ul li a").forEach((link) => {
+const navLink = document.querySelectorAll(".eng-kh a").forEach((link) => {
   if (link.href.includes(`${activePage}`)) {
-    link.classList.add("active");
+    link.classList.add("actives");
   } else {
-    link.classList.remove("active");
+    link.classList.remove("actives");
+  }
+});
+const activePages = window.location.pathname;
+const navLinks = document.querySelectorAll(".nav-aside a").forEach((link) => {
+  if (link.href.includes(`${activePages}`)) {
+    link.classList.add("actives-1");
+  } else {
+    link.classList.remove("actives-1");
   }
 });
 
@@ -92,6 +100,14 @@ function openUser() {
 function closeUser() {
   userCart.classList.remove("show-User");
 }
+
+// // languages
+// const menulan = document.querySelector(".aside");
+// menulan.querySelector(".dropdown > .fa-angle-down").forEach((arrow) => {
+//   arrow.addEventListener("click", function () {
+//     this.closest(".dropdown").classList.toggle("show-now");
+//   });
+// });
 
 function toggle_full_screen() {
   if (
@@ -136,9 +152,10 @@ window.onscroll = () => {
   preview.classList.remove("open-cart");
   userCart.classList.remove("show-User");
 };
-// languages
-const sideLang = document.querySelector(".lang-side");
-const containLang = document.querySelector(".container-kheng");
-sideLang.dispatchEvent("click", () => {
-  containLang.classList.toggle("show-now");
+
+// langaues
+const menulan = document.querySelector(".fa-angle-down");
+const listDrop = document.querySelector(".list-lan");
+menulan.addEventListener("click", () => {
+  listDrop.classList.toggle("show-now");
 });

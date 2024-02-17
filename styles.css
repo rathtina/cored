@@ -781,9 +781,14 @@ nav #icon {
   align-items: center;
   background-color: lightgray;
   /* box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.15); */
-  width: 185px;
-  height: 185px;
+  width: 175px;
+  height: 175px;
   padding: 1rem;
+  cursor: pointer;
+  border: 1.5px solid #eaeaea;
+}
+.box-case:hover {
+  border: 1.5px solid green;
 }
 .box-case > h3 {
   font-size: 1rem;
@@ -2443,7 +2448,7 @@ nav #icon {
     transform: scale(0.7);
   }
   .card-edit {
-    margin-top: 15rem;
+    margin-top: 14rem;
   }
   .case {
     left: -0.5rem;
@@ -2534,13 +2539,13 @@ nav #icon {
   }
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 399px) {
   /* .open-cart {
     top: 31.5%;
     transform: translate(-50%, -50%) scale(1);
   } */
   .card-edit {
-    margin-top: 13rem;
+    margin-top: 12rem;
   }
   /* .box-case > img {
     max-width: 110px;
@@ -2550,8 +2555,8 @@ nav #icon {
     grid-template-rows: repeat(3, 155px);
   }
   .case {
-    right: 0.7rem;
-    margin-top: -1.4rem;
+    margin-right: 0.3rem;
+    margin-top: -1.6rem;
   }
   .box-case {
     width: 175px;
@@ -2568,11 +2573,11 @@ nav #icon {
 }
 @media screen and (max-height: 780px) {
 }
-@media screen and (max-height: 700px) {
+/* @media screen and (max-height: 700px) {
   .card-edit {
     margin-top: 12.5rem;
   }
-}
+} */
 @media screen and (max-height: 600px) {
   .card-edit {
     margin-top: 11.5rem;

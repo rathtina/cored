@@ -9,6 +9,7 @@ if (openBar) {
     rightBar.classList.add("open");
     pageOverlay.style.display = "block";
     leftmenu.classList.remove("open-left");
+    openleft.classList.remove("topbar");
   });
 }
 if (closeBar) {

@@ -8,6 +8,7 @@ if (openBar) {
   openBar.addEventListener("click", () => {
     rightBar.classList.add("open");
     pageOverlay.style.display = "block";
+    leftmenu.classList.remove("open-left");
   });
 }
 if (closeBar) {
@@ -21,18 +22,22 @@ const leftmenu = document.querySelector(".left-bar");
 const closeleft = document.querySelector("#close-left");
 const openleft = document.querySelector("#server");
 const pageOverlays = document.querySelector(".overlay-page");
-if (openleft) {
-  openleft.addEventListener("click", () => {
-    leftmenu.classList.add("open-left");
-    pageOverlays.style.display = "block";
-  });
-}
-if (closeleft) {
-  closeleft.addEventListener("click", () => {
-    leftmenu.classList.remove("open-left");
-    pageOverlays.style.display = "none";
-  });
-}
+openleft.addEventListener("click", () => {
+  leftmenu.classList.toggle("open-left");
+  openleft.classList.toggle("topbar");
+});
+// if (openleft) {
+//   openleft.addEventListener("click", () => {
+//     leftmenu.classList.add("open-left");
+//     // pageOverlays.style.display = "block";
+//   });
+// }
+// if (closeleft) {
+//   closeleft.addEventListener("click", () => {
+//     leftmenu.classList.remove("open-left");
+//     // pageOverlays.style.display = "none";
+//   });
+// }
 
 let eyeIcon = document.getElementById("hidden");
 let password = document.getElementById("password");

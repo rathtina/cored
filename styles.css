@@ -1436,6 +1436,8 @@ nav #icon {
 }
 
 .line-core {
+  position: relative;
+  top: -1.5rem;
   width: 100%;
   height: 0.5px;
   background-color: #cacaca;
@@ -2486,19 +2488,25 @@ nav #icon {
     transition: top 0.2s linear;
   }
   .left-bar.open-left {
-    top: 3rem;
+    top: 2rem;
   }
   .left-bar > p {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     text-align: start;
     font-size: 1.3rem;
   }
   .right-btn {
+    position: relative;
+    top: -1rem;
     padding: 1rem;
   }
   .btn-pre > p {
     margin-left: 1rem;
     font-size: 1rem;
+  }
+  .con-btn-right {
+    position: relative;
+    top: -1rem;
   }
   .btn-left {
     padding: 0.5rem 1rem;

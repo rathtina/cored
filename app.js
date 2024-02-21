@@ -87,16 +87,23 @@ const navLinks = document.querySelectorAll(".nav-aside a").forEach((link) => {
     link.classList.remove("actives-1");
   }
 });
-
+const activePagese = window.location.pathname;
+const navLinkse = document.querySelectorAll(".userCart > a").forEach((link) => {
+  if (link.href.includes(`${activePages}`)) {
+    link.classList.add("actives-2");
+  } else {
+    link.classList.remove("actives-2");
+  }
+});
 // Preview Cart
 let popUp = document.getElementById("preview");
 function openPopup() {
-  preview.classList.add("open-cart");
+  preview.classList.toggle("open-cart");
   userCart.classList.remove("show-User");
 }
-function closePopup() {
-  preview.classList.remove("open-cart");
-}
+// function closePopup() {
+//   preview.classList.remove("open-cart");
+// }
 // UserCart
 let userUp = document.getElementById("userCart");
 function openUser() {

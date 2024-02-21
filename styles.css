@@ -90,6 +90,7 @@ ul {
 .btn-box-1:hover {
   background-color: darkgreen;
   color: white;
+  border: 0;
 }
 .btn-box button > a {
   font-size: 1rem;
@@ -754,7 +755,7 @@ nav #icon {
 /* -------- Case Studies--------*/
 .case {
   position: relative;
-  margin-top: -1.5%;
+  margin-top: -1.8%;
 }
 /* .case > h2 {
   text-transform: uppercase;
@@ -769,8 +770,8 @@ nav #icon {
 }
 .container-case {
   display: grid;
-  grid-template-columns: repeat(4, 180px);
-  grid-template-rows: repeat(2, 180px);
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(2, 150px);
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
@@ -781,8 +782,8 @@ nav #icon {
   align-items: center;
   background-color: lightgray;
   /* box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.15); */
-  width: 175px;
-  height: 175px;
+  width: 160px;
+  height: 160px;
   padding: 1rem;
   cursor: pointer;
   border: 1.5px solid #eaeaea;
@@ -1320,6 +1321,7 @@ nav #icon {
   top: 0.1rem;
   max-width: 2.5rem;
   border-radius: 2rem;
+  cursor: pointer;
 }
 .icon-nav > p {
   color: white;
@@ -1437,7 +1439,7 @@ nav #icon {
 
 .line-core {
   position: relative;
-  top: -1.5rem;
+  top: 1rem;
   width: 100%;
   height: 0.5px;
   background-color: #cacaca;
@@ -1449,6 +1451,8 @@ nav #icon {
   border: 1px solid #cacaca;
   border-radius: 0.5rem;
   outline: 0;
+  position: relative;
+  top: 1.5rem;
   color: black;
   font-family: "Kantumruy Pro", sans-serif;
 }
@@ -1510,7 +1514,7 @@ nav #icon {
   color: green;
 }
 .user-title .p-user > span {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   overflow-x: hidden;
 }
 .icon-lang {
@@ -1522,7 +1526,12 @@ nav #icon {
 .icon-lang > i {
   font-size: 0.6rem;
 }
-.icon-lang > p,
+.icon-lang > span {
+  font-size: 0.8rem;
+  color: black;
+  position: relative;
+  left: -0.1rem;
+}
 .edit > a,
 .change > a,
 .logout > a {
@@ -1570,7 +1579,16 @@ nav #icon {
 .edit:hover {
   background-color: #ebebeb;
 }
-
+.userCart > a {
+  display: block;
+  padding: 0.5rem;
+  border: 0;
+  font-size: 0.8rem;
+}
+.userCart > a.actives-2,
+.userCart > a:hover {
+  background-color: #eaeaea;
+}
 /* --------Edit Profile-------- */
 .btn-box {
   display: flex;
@@ -2548,6 +2566,9 @@ nav #icon {
   }
   .img-head > img {
     display: none;
+  }
+  .line-core {
+    top: -1rem;
   }
 }
 

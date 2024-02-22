@@ -786,10 +786,12 @@ nav #icon {
   height: 160px;
   padding: 1rem;
   cursor: pointer;
-  border: 1.5px solid #eaeaea;
+  border: 2px solid #cacaca;
 }
 .box-case:hover {
-  border: 1.5px solid green;
+  border: 2px solid green;
+  transition: 0.3s linear;
+  box-sizing: border-box;
 }
 .box-case > h3 {
   font-size: 1rem;
@@ -812,8 +814,14 @@ nav #icon {
   font-size: 0.8rem;
   background-color: green;
 }
-.box-case > img {
+.box-case .img-box {
+  position: relative;
+  content: "";
   max-width: 90px;
+}
+.img-box > img {
+  display: block;
+  width: 100%;
 }
 .box-case > button:hover {
   background-color: darkgreen;
@@ -1484,9 +1492,9 @@ nav #icon {
 }
 .show-User {
   visibility: visible;
-  top: 28.5%;
+  top: 26%;
   position: fixed;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-80%, -50%) scale(1);
 }
 
 .user-title {
@@ -1588,6 +1596,7 @@ nav #icon {
 .userCart > a.actives-2,
 .userCart > a:hover {
   background-color: #eaeaea;
+  color: black;
 }
 /* --------Edit Profile-------- */
 .btn-box {
@@ -1734,9 +1743,6 @@ nav #icon {
   position: absolute;
   right: 1.5rem;
 }
-.dropdown.show-now .fa-angle-down {
-  transform: rotate(180deg);
-}
 .aside > ul {
   padding: 1.5rem 1rem;
 }
@@ -1755,13 +1761,15 @@ nav #icon {
   color: black;
 }
 .list-lan {
-  margin-top: 1.4rem;
+  display: none;
+  margin-top: 1.2rem;
   border-radius: 0.3rem;
   background-color: #f1f1f1;
   padding: 1.5rem 1rem;
   width: 100%;
+  height: 10rem;
 }
-.list-lan.show-now {
+.list-lan.now {
   display: block;
 }
 .link-lan {
@@ -1847,14 +1855,14 @@ nav #icon {
     transform: translate(-50%, -50%) scale(1);
   }
   .show-User {
-    top: 15%;
+    top: 13.5%;
     transform: translate(-40%, -50%) scale(1);
   }
   .card-edit {
     margin-top: 22rem;
   }
   .case {
-    top: 5rem;
+    top: 5.7rem;
     left: 0.3rem;
   }
   .container-case {
@@ -1960,7 +1968,7 @@ nav #icon {
     margin-top: 20rem;
   }
   .userCart {
-    top: 15%;
+    top: 13.5%;
     transform: translate(-40%, -50%) scale(1);
   }
   .container-case {
@@ -2072,12 +2080,12 @@ nav #icon {
     display: none;
   }
   .userCart {
-    top: 19.5%;
+    top: 18%;
     transform: translate(-50%, -50%) scale(1);
   }
   .case {
     left: -0.1rem;
-    top: 4.5rem;
+    top: 5rem;
   }
   .container-case {
     grid-template-rows: repeat(2, 170px);
@@ -2109,7 +2117,7 @@ nav #icon {
     width: 13rem;
   }
   .open-cart {
-    top: 42%;
+    top: 40.5%;
     transform: translate(-65%, -50%) scale(1);
   }
   .userCart {

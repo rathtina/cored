@@ -39,37 +39,51 @@ openleft.addEventListener("click", () => {
 //     // pageOverlays.style.display = "none";
 //   });
 // }
+function togglePasswordVisibility() {
+  var passwordInput = document.getElementById("password");
 
-let eyeIcon = document.getElementById("hidden");
-let password = document.getElementById("password");
-
-eyeIcon.onclick = function () {
-  if (password.type == "password") {
-    password.type = "text";
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
   } else {
-    password.type = "password";
+    passwordInput.type = "password";
   }
-};
+}
+function togglePasswordVisibilityOne() {
+  var passwordInput = document.getElementById("password-1");
 
-let eyeIconOne = document.getElementById("hidden-1");
-let passwordOne = document.getElementById("password-1");
-eyeIconOne.onclick = function () {
-  if (passwordOne.type == "password-1") {
-    passwordOne.type = "text";
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
   } else {
-    passwordOne.type = "password-1";
+    passwordInput.type = "password";
   }
-};
+}
+function togglePasswordVisibilityTwo() {
+  var passwordInput = document.getElementById("password-2");
 
-let eyeIcontwo = document.getElementById("hidden-2");
-let passwordtwo = document.getElementById("password-2");
-eyeIcontwo.onclick = function () {
-  if (passwordtwo.type == "password-2") {
-    passwordtwo.type = "text-2";
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
   } else {
-    passwordtwo.type = "password-2";
+    passwordInput.type = "password";
   }
-};
+}
+function togglePasswordVisibilityThree() {
+  var passwordInput = document.getElementById("password-3");
+
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+  } else {
+    passwordInput.type = "password";
+  }
+}
+function togglePasswordVisibilityFour() {
+  var passwordInput = document.getElementById("password-4");
+
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+  } else {
+    passwordInput.type = "password";
+  }
+}
 // Link Navigation
 const activePage = window.location.pathname;
 const navLink = document.querySelectorAll(".eng-kh a").forEach((link) => {
@@ -107,20 +121,12 @@ function openPopup() {
 // UserCart
 let userUp = document.getElementById("userCart");
 function openUser() {
-  userCart.classList.add("show-User");
+  userCart.classList.toggle("show-User");
   preview.classList.remove("open-cart");
 }
-function closeUser() {
-  userCart.classList.remove("show-User");
-}
-
-// // languages
-// const menulan = document.querySelector(".aside");
-// menulan.querySelector(".dropdown > .fa-angle-down").forEach((arrow) => {
-//   arrow.addEventListener("click", function () {
-//     this.closest(".dropdown").classList.toggle("show-now");
-//   });
-// });
+// function closeUser() {
+//   userCart.classList.remove("show-User");
+// }
 
 function toggle_full_screen() {
   if (
@@ -165,10 +171,7 @@ window.onscroll = () => {
   preview.classList.remove("open-cart");
   userCart.classList.remove("show-User");
 };
-
-// langaues
-const menulan = document.querySelector(".fa-angle-down");
-const listDrop = document.querySelector(".list-lan");
-menulan.addEventListener("click", () => {
-  listDrop.classList.toggle("show-now");
-});
+// list languages
+const optionMenu = document.createElement(".aside");
+const clickBtn = document.querySelector(".fa-angle-down");
+clickBtn.addEventListener("click", () => optionMenu.classList.toggle("now"));

@@ -103,7 +103,7 @@
                 />
                 <p>Khmer</p>
               </a>
-              <a href="changecore.html" class="actives-3">
+              <a href="changecore.html">
                 <img src="images/english-icon-png-21.jpg" alt="english" />
                 <p>English</p>
               </a>
@@ -183,12 +183,12 @@
       <span class="icon-lang">
         <span><i class="fa-solid fa-earth-asia"></i> Languages</span>
         <span class="img-lang">
-          <a href="cambodia.html"
+          <a href="changekh.html"
             ><img
               src="images/circle-flag-of-cambodia-free-png.webp"
               alt="cambodia"
           /></a>
-          <a href="core.html"
+          <a href="changecore.html"
             ><img src="images/english-icon-png-21.jpg" alt="english"
           /></a>
         </span>
@@ -211,7 +211,6 @@
       <a href="index.html"
         ><i class="fa-solid fa-right-to-bracket"></i> Logout</a
       >
-      <button onclick="closeUser()">close</button>
     </div>
 
     <div class="preview" id="preview">
@@ -322,14 +321,22 @@
             <label><i class="fa-solid fa-star-of-life"></i>Old Password</label>
             <div class="eye-in">
               <input type="password" id="password" />
-              <i class="fa-solid fa-eye-slash" id="hidden"></i>
+              <i
+                class="fa-solid fa-eye-slash"
+                id="hidden"
+                onclick="togglePasswordVisibility()"
+              ></i>
             </div>
           </div>
           <div class="btn-box">
             <label><i class="fa-solid fa-star-of-life"></i>New Password</label>
             <div class="eye-in">
-              <input type="password" id="password-1" />
-              <i class="fa-solid fa-eye-slash" id="hidden-1"></i>
+              <input type="password" id="password-3" />
+              <i
+                class="fa-solid fa-eye-slash"
+                id="hidden-3"
+                onclick="togglePasswordVisibilityThree()"
+              ></i>
             </div>
           </div>
           <div class="btn-box">
@@ -337,8 +344,12 @@
               ><i class="fa-solid fa-star-of-life"></i>Confirm Password</label
             >
             <div class="eye-in">
-              <input type="password" id="password-2" />
-              <i class="fa-solid fa-eye-slash" id="hidden-2"></i>
+              <input type="password" id="password-4" />
+              <i
+                class="fa-solid fa-eye-slash"
+                id="hidden-4"
+                onclick="togglePasswordVisibilityFour()"
+              ></i>
             </div>
           </div>
           <div class="check-box">

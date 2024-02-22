@@ -19,13 +19,13 @@
           </div>
           <h2>core security</h2>
           <div class="server-click">
-            <!-- <i class="fa-solid fa-server" id="server"></i> -->
             <p>S8 Server | s8server</p>
             <i
               class="fa-solid fa-chevron-down"
               id="server"
               onclick="openPopup()"
             ></i>
+            <!-- <i class="fa-solid fa-server" id="server"></i> -->
           </div>
         </div>
         <div class="icon-nav">
@@ -35,10 +35,24 @@
               ><img src="images/man.jpg!d" alt="man" />
               <i class="fa-solid fa-bars-staggered"></i>
             </span>
-            <i
-              class="fa-solid fa-arrows-to-circle zoom-none"
-              onclick="toggle_full_screen()"
-            ></i>
+            <div class="zoo-in-out">
+              <div class="img-zoom">
+                <img
+                  src="images/g-in.webp"
+                  alt="zoom-in"
+                  id="in"
+                  onclick="toggle_in_screen()"
+                />
+              </div>
+              <div class="img-zoom">
+                <img
+                  src="images/g-out.webp"
+                  alt="zoom-out"
+                  id="out"
+                  onclick="toggle_full_screen()"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

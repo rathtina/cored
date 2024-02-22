@@ -1267,7 +1267,7 @@ nav #icon {
   left: 0;
   top: 0;
   z-index: 999;
-  background-color: green;
+  background-color: rgb(6, 48, 6);
 }
 .navigation {
   display: flex;
@@ -1309,7 +1309,8 @@ nav #icon {
   gap: 1rem;
 }
 .icon-nav .head-user i {
-  margin-left: 0.5rem;
+  position: relative;
+  margin-right: 2rem;
   color: white;
 }
 .img-head {
@@ -1789,6 +1790,22 @@ nav #icon {
 }
 .link-lan > img {
   max-width: 1.5rem;
+}
+
+/* ---------zoom-in-out-------- */
+.zoo-in-out {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-zoom {
+  max-width: 2.5rem;
+}
+.img-zoom > img {
+  width: 100%;
+}
+.img-zoom #in {
+  display: none;
 }
 
 /* -------Respnsive-------- */
@@ -2577,6 +2594,12 @@ nav #icon {
   }
   .line-core {
     top: -1rem;
+  }
+  .img-zoom #in {
+    display: none;
+  }
+  .img-zoom #out {
+    display: none;
   }
 }
 

@@ -128,40 +128,89 @@ function openUser() {
 //   userCart.classList.remove("show-User");
 // }
 
+// function toggle_full_screen() {
+//   if (
+//     (document.fullScreenElement && document.fullScreenElement !== null) ||
+//     (!document.mozFullScreen && !document.webkitIsFullScreen)
+//   ) {
+//     if (document.documentElement.requestFullScreen) {
+//       document.documentElement.requestFullScreen();
+//     } else if (document.documentElement.mozRequestFullScreen) {
+//       /* Firefox */
+//       document.documentElement.mozRequestFullScreen();
+//     } else if (document.documentElement.webkitRequestFullScreen) {
+//       /* Chrome, Safari & Opera */
+//       document.documentElement.webkitRequestFullScreen(
+//         Element.ALLOW_KEYBOARD_INPUT
+//       );
+//     } else if (document.msRequestFullscreen) {
+//       /* IE/Edge */
+//       document.documentElement.msRequestFullscreen();
+//     }
+// } else {
+//   if (document.cancelFullScreen) {
+//     document.cancelFullScreen();
+//   } else if (document.mozCancelFullScreen) {
+//     /* Firefox */
+//     document.mozCancelFullScreen();
+//   } else if (document.webkitCancelFullScreen) {
+//     /* Chrome, Safari and Opera */
+//     document.webkitCancelFullScreen();
+//   } else if (document.msExitFullscreen) {
+//     /* IE/Edge */
+//     document.msExitFullscreen();
+//   }
+// }
+// }
+const zoomIn = document.querySelector("#in");
+const zoomOut = document.querySelector("#out");
 function toggle_full_screen() {
-  if (
-    (document.fullScreenElement && document.fullScreenElement !== null) ||
-    (!document.mozFullScreen && !document.webkitIsFullScreen)
-  ) {
-    if (document.documentElement.requestFullScreen) {
-      document.documentElement.requestFullScreen();
-    } else if (document.documentElement.mozRequestFullScreen) {
-      /* Firefox */
-      document.documentElement.mozRequestFullScreen();
-    } else if (document.documentElement.webkitRequestFullScreen) {
-      /* Chrome, Safari & Opera */
-      document.documentElement.webkitRequestFullScreen(
-        Element.ALLOW_KEYBOARD_INPUT
-      );
-    } else if (document.msRequestFullscreen) {
-      /* IE/Edge */
-      document.documentElement.msRequestFullscreen();
-    }
-  } else {
-    if (document.cancelFullScreen) {
-      document.cancelFullScreen();
-    } else if (document.mozCancelFullScreen) {
-      /* Firefox */
-      document.mozCancelFullScreen();
-    } else if (document.webkitCancelFullScreen) {
-      /* Chrome, Safari and Opera */
-      document.webkitCancelFullScreen();
-    } else if (document.msExitFullscreen) {
-      /* IE/Edge */
-      document.msExitFullscreen();
-    }
+  if (document.documentElement.requestFullScreen) {
+    document.documentElement.requestFullScreen();
+    zoomIn.style.display = "block";
+    zoomOut.style.display = "none";
+  } else if (document.documentElement.mozRequestFullScreen) {
+    zoomIn.style.display = "block";
+    zoomOut.style.display = "none";
+    /* Firefox */
+    document.documentElement.mozRequestFullScreen();
+  } else if (document.documentElement.webkitRequestFullScreen) {
+    zoomIn.style.display = "block";
+    zoomOut.style.display = "none";
+    /* Chrome, Safari & Opera */
+    document.documentElement.webkitRequestFullScreen(
+      Element.ALLOW_KEYBOARD_INPUT
+    );
+  } else if (document.msRequestFullscreen) {
+    /* IE/Edge */
+    document.documentElement.msRequestFullscreen();
+    zoomIn.style.display = "block";
+    zoomOut.style.display = "none";
   }
 }
+function toggle_in_screen() {
+  if (document.cancelFullScreen) {
+    document.cancelFullScreen();
+    zoomOut.style.display = "block";
+    zoomIn.style.display = "none";
+  } else if (document.mozCancelFullScreen) {
+    zoomOut.style.display = "block";
+    zoomIn.style.display = "none";
+    /* Firefox */
+    document.mozCancelFullScreen();
+  } else if (document.webkitCancelFullScreen) {
+    zoomOut.style.display = "block";
+    zoomIn.style.display = "none";
+    /* Chrome, Safari and Opera */
+    document.webkitCancelFullScreen();
+  } else if (document.msExitFullscreen) {
+    /* IE/Edge */
+    document.msExitFullscreen();
+    zoomOut.style.display = "block";
+    zoomIn.style.display = "none";
+  }
+}
+
 function clearField() {
   var selectField = document.getElementById("server");
   selectField.value = "server";
@@ -171,7 +220,3 @@ window.onscroll = () => {
   preview.classList.remove("open-cart");
   userCart.classList.remove("show-User");
 };
-// list languages
-const optionMenu = document.createElement(".aside");
-const clickBtn = document.querySelector(".fa-angle-down");
-clickBtn.addEventListener("click", () => optionMenu.classList.toggle("now"));

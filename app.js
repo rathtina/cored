@@ -124,46 +124,9 @@ function openUser() {
   userCart.classList.toggle("show-User");
   preview.classList.remove("open-cart");
 }
-// function closeUser() {
-//   userCart.classList.remove("show-User");
-// }
-
-// function toggle_full_screen() {
-//   if (
-//     (document.fullScreenElement && document.fullScreenElement !== null) ||
-//     (!document.mozFullScreen && !document.webkitIsFullScreen)
-//   ) {
-//     if (document.documentElement.requestFullScreen) {
-//       document.documentElement.requestFullScreen();
-//     } else if (document.documentElement.mozRequestFullScreen) {
-//       /* Firefox */
-//       document.documentElement.mozRequestFullScreen();
-//     } else if (document.documentElement.webkitRequestFullScreen) {
-//       /* Chrome, Safari & Opera */
-//       document.documentElement.webkitRequestFullScreen(
-//         Element.ALLOW_KEYBOARD_INPUT
-//       );
-//     } else if (document.msRequestFullscreen) {
-//       /* IE/Edge */
-//       document.documentElement.msRequestFullscreen();
-//     }
-// } else {
-//   if (document.cancelFullScreen) {
-//     document.cancelFullScreen();
-//   } else if (document.mozCancelFullScreen) {
-//     /* Firefox */
-//     document.mozCancelFullScreen();
-//   } else if (document.webkitCancelFullScreen) {
-//     /* Chrome, Safari and Opera */
-//     document.webkitCancelFullScreen();
-//   } else if (document.msExitFullscreen) {
-//     /* IE/Edge */
-//     document.msExitFullscreen();
-//   }
-// }
-// }
 const zoomIn = document.querySelector("#in");
 const zoomOut = document.querySelector("#out");
+const zoomUser = document.querySelector(".show-User");
 function toggle_full_screen() {
   if (document.documentElement.requestFullScreen) {
     document.documentElement.requestFullScreen();

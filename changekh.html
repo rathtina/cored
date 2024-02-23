@@ -38,7 +38,7 @@
             <div class="zoo-in-out">
               <div class="img-zoom">
                 <img
-                  src="images/g-in.webp"
+                  src="images/in-2.png"
                   alt="zoom-in"
                   id="in"
                   onclick="toggle_in_screen()"
@@ -46,7 +46,7 @@
               </div>
               <div class="img-zoom">
                 <img
-                  src="images/g-out.webp"
+                  src="images/zoom-out-1.png"
                   alt="zoom-out"
                   id="out"
                   onclick="toggle_full_screen()"
@@ -333,7 +333,6 @@
       <a href="index.html"
         ><i class="fa-solid fa-right-to-bracket"></i> ចាកចេញ</a
       >
-      <button onclick="closeUser()">បិទ</button>
     </div>
 
     <div class="card-edit">
@@ -341,7 +340,7 @@
         <form>
           <h2>កែលេខសម្ងាត់</h2>
           <div class="btn-box">
-            <label><i class="fa-solid fa-star-of-life"></i>អ៊ីម៉ែល</label>
+            <label></i>អ៊ីម៉ែល</label>
             <input type="text" placeholder="ornrathtina123@gmailcom" disabled />
           </div>
           <div class="btn-box">
@@ -350,7 +349,7 @@
             >
             <div class="eye-in">
               <input type="password" id="password" />
-              <i class="fa-solid fa-eye-slash" id="hidden"></i>
+              <i class="fa-solid fa-eye-slash" id="hidden" onclick="togglePasswordVisibility()"></i>
             </div>
           </div>
           <div class="btn-box">
@@ -359,7 +358,7 @@
             >
             <div class="eye-in">
               <input type="password" id="password-1" />
-              <i class="fa-solid fa-eye-slash" id="hidden-1"></i>
+              <i class="fa-solid fa-eye-slash" id="hidden-1" onclick="togglePasswordVisibilityOne()"></i>
             </div>
           </div>
           <div class="btn-box">
@@ -368,7 +367,7 @@
             >
             <div class="eye-in">
               <input type="password" id="password-2" />
-              <i class="fa-solid fa-eye-slash" id="hidden-2"></i>
+              <i class="fa-solid fa-eye-slash" id="hidden-2" onclick="togglePasswordVisibilityTwo()"></i>
             </div>
           </div>
           <div class="check-box">

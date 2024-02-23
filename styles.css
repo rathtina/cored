@@ -103,6 +103,7 @@ ul {
 .btn-box .eye-in {
   position: relative;
 }
+
 .btn-box i {
   position: absolute;
   font-size: 0.8rem;
@@ -755,7 +756,7 @@ nav #icon {
 /* -------- Case Studies--------*/
 .case {
   position: relative;
-  margin-top: -1.8%;
+  margin-top: -1.7%;
 }
 /* .case > h2 {
   text-transform: uppercase;
@@ -815,13 +816,11 @@ nav #icon {
   background-color: green;
 }
 .box-case .img-box {
-  position: relative;
-  content: "";
-  max-width: 90px;
+  width: 90px;
+  height: 90px;
 }
 .img-box > img {
-  display: block;
-  width: 100%;
+  width: 90px;
 }
 .box-case > button:hover {
   background-color: darkgreen;
@@ -1267,7 +1266,7 @@ nav #icon {
   left: 0;
   top: 0;
   z-index: 999;
-  background-color: rgb(6, 48, 6);
+  background-color: green;
 }
 .navigation {
   display: flex;
@@ -1799,7 +1798,7 @@ nav #icon {
   justify-content: center;
 }
 .img-zoom {
-  max-width: 2.5rem;
+  max-width: 1.5rem;
 }
 .img-zoom > img {
   width: 100%;

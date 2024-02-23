@@ -1292,6 +1292,9 @@ nav #icon {
   justify-content: center;
   color: white;
 }
+.server-click > i {
+  cursor: pointer;
+}
 .topbar {
   transform: rotate(-180deg);
 }
@@ -1801,6 +1804,7 @@ nav #icon {
   max-width: 1.5rem;
 }
 .img-zoom > img {
+  cursor: pointer;
   width: 100%;
 }
 .img-zoom #in {

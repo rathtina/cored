@@ -24,7 +24,10 @@ a {
   align-items: center;
   height: 100vh;
   font-family: "Roboto", sans-serif;
-  background-color: white;
+  background-color: #cacaca;
+}
+body {
+  background-color: #ececec;
 }
 ul {
   list-style-type: none;
@@ -32,9 +35,10 @@ ul {
 .card {
   max-width: 400px;
   width: 100%;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   padding: 1.5rem 2rem;
-  box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.4);
+  background-color: white;
+  box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.1);
 }
 .card form > h2 {
   font-size: 1.5rem;
@@ -50,9 +54,10 @@ ul {
 .card-for {
   max-width: 300px;
   width: 100%;
+  background-color: white;
   border-radius: 0.5rem;
   padding: 1.5rem 2rem;
-  box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.4);
+  box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.15);
 }
 .card-for > h3 {
   text-align: center;
@@ -781,13 +786,14 @@ nav #icon {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: lightgray;
-  /* box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.15); */
+  background-color: #cacaca;
+  box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.1);
   width: 160px;
   height: 160px;
   padding: 1rem;
   cursor: pointer;
   border: 2px solid #cacaca;
+  border-radius: 0.3rem;
 }
 .box-case:hover {
   border: 2px solid green;
@@ -1330,7 +1336,7 @@ nav #icon {
   align-items: center;
   position: relative;
   top: 0.1rem;
-  max-width: 2.5rem;
+  max-width: 2rem;
   border-radius: 2rem;
   cursor: pointer;
 }
@@ -1485,7 +1491,7 @@ nav #icon {
   top: 0;
   left: 80%;
   transform: translate(-50%, -50%);
-  box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.5);
+  box-shadow: 0 8px 10px hsla(230, 75%, 32%, 0.2);
   width: 15rem;
   background-color: white;
   border-radius: 0.5rem;
@@ -1634,7 +1640,7 @@ nav #icon {
   justify-content: center;
   align-items: center;
   height: 50vh;
-  background-color: white;
+  background-color: #eaeaea;
   position: relative;
   margin-top: 13rem;
 }
@@ -1752,11 +1758,9 @@ nav #icon {
 .aside > ul > li {
   font-size: 1.3rem;
   padding: 1rem;
+  border-radius: 0.5rem;
 }
-.aside > ul > li a.actives,
-.aside > ul > li i.actives-one {
-  color: blue;
-}
+.aside > ul > li.nowactive,
 .aside > ul > li:hover {
   background-color: #eaeaea;
 }
@@ -1806,6 +1810,8 @@ nav #icon {
 .img-zoom > img {
   cursor: pointer;
   width: 100%;
+  position: relative;
+  top: 0.2rem;
 }
 .img-zoom #in {
   display: none;
@@ -2459,10 +2465,14 @@ nav #icon {
     background-color: lightgray;
   }
   .container-kheng {
+    display: none;
     width: 100%;
     position: relative;
     top: -1rem;
     left: 2rem;
+  }
+  .container-kheng.now {
+    display: block;
   }
   /* .container-kheng.show-now{
     display: block;
@@ -2474,7 +2484,10 @@ nav #icon {
   }
   .eng-kh a {
     display: flex;
-    padding: 0.5rem;
+    gap: 2rem;
+    padding: 0.8rem;
+    position: relative;
+    right: 2rem;
   }
   .eng-kh a.actives-1,
   .eng-kh a:hover {
@@ -2482,7 +2495,12 @@ nav #icon {
     background-color: lightgray;
   }
   .eng-kh a > img {
+    position: relative;
     max-width: 1.5rem;
+  }
+  .eng-kh a > p {
+    position: relative;
+    right: 2rem;
   }
   #close-bar {
     display: flex;
@@ -2603,6 +2621,43 @@ nav #icon {
   }
   .img-zoom #out {
     display: none;
+  }
+
+  .icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-link li.now .icon-link > i {
+    transform: rotate(-180deg);
+  }
+  .nav-link li .sub-menu {
+    display: none;
+    background-color: #cacaca;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  .nav-link li.now .sub-menu {
+    display: block;
+    transition: all 0.5s linear;
+  }
+  .sub-menu > li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.8rem 1rem;
+    padding: 0.5rem;
+    transition: all 0.5s ease;
+    border-radius: 0.5rem;
+  }
+  .sub-menu > li.actives,
+  .sub-menu > li:hover {
+    background-color: #eaeaea;
+  }
+  .sub-menu img {
+    max-width: 1.2rem;
   }
 }
 

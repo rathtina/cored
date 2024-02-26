@@ -84,9 +84,15 @@ function togglePasswordVisibilityFour() {
     passwordInput.type = "password";
   }
 }
+// arrow
+let arrow = document.querySelector(".arrow");
+arrow.addEventListener("click", (e) => {
+  let arrowParent = e.target.parentElement.parentElement;
+  arrowParent.classList.toggle("now");
+});
 // Link Navigation
 const activePage = window.location.pathname;
-const navLink = document.querySelectorAll(".eng-kh a").forEach((link) => {
+const navLink = document.querySelectorAll(".sub-menu > li").forEach((link) => {
   if (link.href.includes(`${activePage}`)) {
     link.classList.add("actives");
   } else {
@@ -94,9 +100,9 @@ const navLink = document.querySelectorAll(".eng-kh a").forEach((link) => {
   }
 });
 const activePages = window.location.pathname;
-const navLinks = document.querySelectorAll(".nav-aside a").forEach((link) => {
+const navLinks = document.querySelectorAll(".aside ul li").forEach((link) => {
   if (link.href.includes(`${activePages}`)) {
-    link.classList.add("actives-1");
+    link.classList.add("nowactive");
   } else {
     link.classList.remove("actives-1");
   }
